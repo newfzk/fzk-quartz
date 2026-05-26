@@ -1,8 +1,23 @@
 ---
+title: 事务ACID
+date: 2026-05-22
 tags:
   - topic/数据库事务
-  - status/reviewed
-created: 2026-05-22
+status: to-review
+updated: 2026-05-26 15:30:00
+aliases:
+  - Transaction ACID
+  - 事务特性
+  - 数据库事务ACID
+related:
+  - "[[隔离级别]]"
+  - "[[脏读-Dirty-Read]]"
+  - "[[不可重复读-Non-repeatable-Read]]"
+  - "[[幻读-Phantom-Read]]"
+  - "[[Undo-Redo日志详解]]"
+  - "[[锁机制实现详解]]"
+  - "[[MVCC-多版本并发控制]]"
+  - "[[事务传播行为]]"
 ---
 
 事务是数据库管理系统执行过程中的一个逻辑单位，由一个有限的数据库操作序列构成。ACID是事务必须满足的四个特性：
@@ -43,7 +58,7 @@ created: 2026-05-22
 
 #### 为什么需要隔离性？
 
-多个事务同时执行时，如果不加隔离，可能会出现三种并发异常 [[脏读-Dirty-Read]] /[[不可重复读-Non-repeatable-Read]] / [[幻读-Phantom-Read]]
+多个事务同时执行时，如果不加隔离，可能会出现三种并发异常 [[脏读-Dirty-Read]]、[[不可重复读-Non-repeatable-Read]]、[[幻读-Phantom-Read]]
 #### 四种隔离级别
 
 [[隔离级别]]

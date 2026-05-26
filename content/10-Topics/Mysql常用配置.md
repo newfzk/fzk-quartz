@@ -6,7 +6,7 @@ tags:
   - topic/并发控制
   - topic/数据库配置
   - language/sql
-  - status/to-review
+  - status/reviewed
 aliases:
   - MySQL配置
   - MySQL常用参数

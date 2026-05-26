@@ -15,13 +15,10 @@ created: 2026-05-20
 
 ## 🔗 相关知识
 
-- **ConcurrentHashMap**：JDK1.8后使用CAS + synchronized，锁粒度细，读操作无锁，写操作只锁桶。
-    
-- **CopyOnWriteArrayList**：读操作不加锁，写操作复制新数组，适合写极少、遍历频繁的场景。
-    
-- **并发读写问题**：普通HashMap多线程下可能死循环、数据丢失；使用`Collections.synchronizedMap`性能差。
-    
-- **缓存优化**：可配合Caffeine或Guava Cache设置过期时间、最大容量，避免内存无限增长。
+- [[Java并发集合-ConcurrentHashMap与CopyOnWriteArrayList]] - 并发集合详解
+- [[CAS-Compare-And-Swap]] - CAS原子操作机制
+- [[锁机制实现详解]] - 锁机制原理
+- [[乐观锁]] - 乐观并发控制方式
 
 ## 💡 记忆技巧
 

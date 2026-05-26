@@ -1,13 +1,21 @@
 ---
+title: CAS（Compare And Swap）机制
+date: 2026-05-23
 tags:
   - topic/并发控制
   - topic/CAS
-  - "#language/java"
-  - status/to-review
-created: 2026-05-23
+  - language/java
+status: to-review
+updated: 2026-05-26 15:30:00
+aliases:
+  - Compare-And-Swap
+  - CAS机制
+  - 乐观锁/CAS
 related:
   - "[[乐观锁]]"
   - "[[MVCC-多版本并发控制]]"
+  - "[[悲观锁]]"
+  - "[[锁机制实现详解]]"
 ---
 
 # CAS（Compare And Swap）机制
@@ -440,7 +448,9 @@ public class BestPractice {
 
 ## 相关链接
 
-- \[\[乐观锁]] - CAS是乐观锁的一种实现方式
-- \[\[悲观锁]] - 悲观并发控制方式
-- \[\[MVCC-多版本并发控制]] - 另一种并发控制机制
+- [[乐观锁]] - CAS是乐观锁的一种实现方式
+- [[悲观锁]] - 悲观并发控制方式
+- [[MVCC-多版本并发控制]] - 另一种并发控制机制
+- [[隔离级别]] - 四种隔离级别详解
+- [[锁机制实现详解]] - 数据库锁机制原理
 

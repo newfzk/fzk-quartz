@@ -1,10 +1,22 @@
 ---
+title: Undo/Redo 日志详解
+date: 2026-05-23
 tags:
   - topic/数据库事务
   - topic/并发控制
-  - "#language/sql"
-  - status/to-review
-created: 2026-05-23
+  - language/sql
+status: to-review
+updated: 2026-05-26 15:30:00
+aliases:
+  - Undo日志
+  - Redo日志
+  - Undo-Redo
+  - 数据库日志
+related:
+  - "[[事务ACID]]"
+  - "[[MVCC-多版本并发控制]]"
+  - "[[隔离级别]]"
+  - "[[Mysql常用配置]]"
 ---
 
 # Undo/Redo 日志详解

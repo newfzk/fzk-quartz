@@ -1,8 +1,21 @@
 ---
+title: MVCC（多版本并发控制）
+date: 2026-05-23
 tags:
   - topic/数据库事务
-  - status/reviewed
-created: 2026-05-23
+  - topic/并发控制
+status: to-review
+updated: 2026-05-26 15:30:00
+aliases:
+  - Multi-Version Concurrency Control
+  - 多版本并发控制
+  - 数据库/MVCC
+related:
+  - "[[隔离级别]]"
+  - "[[锁机制实现详解]]"
+  - "[[乐观锁]]"
+  - "[[悲观锁]]"
+  - "[[Undo-Redo日志详解]]"
 ---
 
 # MVCC（多版本并发控制）
