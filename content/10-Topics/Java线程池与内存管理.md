@@ -13,7 +13,8 @@ aliases:
   - 线程池
   - 内存管理
 related:
-  - "[[Java并发集合-ConcurrentHashMap与CopyOnWriteArrayList]]"
+  - "[[Java并发集合-ConcurrentHashMap]]"
+  - "[[Java并发集合-CopyOnWriteArrayList]]"
   - "[[锁机制实现详解]]"
   - "[[CAS-Compare-And-Swap]]"
 ---
@@ -632,6 +633,8 @@ ExecutorService executor = new ThreadPoolExecutor(
 
 ## 参考链接
 
-- [[Java并发集合-ConcurrentHashMap与CopyOnWriteArrayList]] - 并发集合详解
+- [[Java并发集合-ConcurrentHashMap]] - ConcurrentHashMap 原理与实现
+- [[Java并发集合-CopyOnWriteArrayList]] - CopyOnWriteArrayList 原理与实现
+- [[Java并发集合-ConcurrentHashMap与CopyOnWriteArrayList]] - 并发容器对比与选型
 - [[锁机制实现详解]] - 锁机制原理
 - [[CAS-Compare-And-Swap]] - CAS机制详解

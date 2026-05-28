@@ -15,7 +15,9 @@ created: 2026-05-20
 
 ## 🔗 相关知识
 
-- [[Java并发集合-ConcurrentHashMap与CopyOnWriteArrayList]] - 并发集合详解
+- [[Java并发集合-ConcurrentHashMap与CopyOnWriteArrayList]] - 并发容器对比与选型
+- [[Java并发集合-ConcurrentHashMap]] - CHM 原理与实现
+- [[Java并发集合-CopyOnWriteArrayList]] - COW 原理与实现
 - [[CAS-Compare-And-Swap]] - CAS原子操作机制
 - [[锁机制实现详解]] - 锁机制原理
 - [[乐观锁]] - 乐观并发控制方式

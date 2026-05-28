@@ -12,7 +12,9 @@ tags:
 ## 10-Topics — 知识点
 
 - [[CAS-Compare-And-Swap|CAS 比较并交换]]
-- [[Java并发集合-ConcurrentHashMap与CopyOnWriteArrayList|Java 并发集合 — ConcurrentHashMap 与 CopyOnWriteArrayList]]
+- [[Java并发集合-ConcurrentHashMap|ConcurrentHashMap 原理与实现]]
+- [[Java并发集合-CopyOnWriteArrayList|CopyOnWriteArrayList 原理与实现]]
+- [[Java并发集合-ConcurrentHashMap与CopyOnWriteArrayList|Java 并发集合 — ConcurrentHashMap 与 CopyOnWriteArrayList 选型]]
 - [[Java线程池与内存管理|Java 线程池与内存管理]]
 - [[MVCC-多版本并发控制|MVCC 多版本并发控制]]
 - [[MySQL Binlog 日志配置|MySQL Binlog 日志配置]]
@@ -28,6 +30,7 @@ tags:
 - [[接口幂等方案设计|接口幂等方案设计]]
 - [[接口性能排查指南|接口性能排查指南]]
 - [[数据加密与密钥管理|数据加密与密钥管理]]
+- [[synchronized机制详解|synchronized 机制详解]]
 - [[状态机模式实现|状态机模式实现]]
 - [[脏读-Dirty-Read|脏读（Dirty Read）]]
 - [[锁机制实现详解|锁机制实现详解]]
