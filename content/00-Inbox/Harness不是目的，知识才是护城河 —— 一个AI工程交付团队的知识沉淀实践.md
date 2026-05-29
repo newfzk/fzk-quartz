@@ -3,7 +3,6 @@ title: Harness不是目的，知识才是护城河 —— 一个AI工程交付�
 source: https://mp.weixin.qq.com/s/Xy8NwrHZRWv301eTZz4Dpw
 author:
   - 腾讯程序员/stevenpxiao
-published:
 created: 2026-05-25
 description: 如何设计知识分层架构
 tags:
