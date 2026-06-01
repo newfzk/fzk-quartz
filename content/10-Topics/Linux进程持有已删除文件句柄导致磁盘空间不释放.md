@@ -10,7 +10,7 @@
 
 在 Linux 中，删除文件 (`rm` / `unlink()`) 并不立即释放磁盘空间，其流程为：
 
-1. `rm` 仅删除**目录项（dentry）**，即文件名与 inode 的映射关系
+1. `rm` 仅删除**[[Linux-Dentry目录项详解|目录项（dentry）]]**，即文件名与 inode 的映射关系
 2. 若有进程已通过 `open()` 打开了该文件，则 inode 的引用计数仍 > 0
 3. inode 及其数据块只有在引用计数归零后才被回收
 4. 若进程异常退出前未 `close()`，或进程仍在运行（如持续写日志），空间一直不释放
@@ -70,5 +70,8 @@ truncate -s 0 /path/to/file.log
 ## 关联知识点
 
 - [[lsof-文件诊断工具|lsof 文件诊断工具]] — 文件句柄诊断的核心工具
-- 待补充：Linux 文件系统 inode 管理
+- [[Linux文件链接计数-link-count|Linux 文件链接计数（Link Count）]] — link count 与 inode 引用机制详解
+- [[Linux-Inode详解|Inode 详解]] — inode 是文件元信息的核心结构
+- [[Linux-Dentry目录项详解|Dentry 目录项详解]] — dentry 是文件名到 inode 的映射
+- [[Linux-文件描述符fd详解|文件描述符（fd）详解]] — 进程持有文件句柄的本质
 - 待补充：logrotate 日志轮转配置

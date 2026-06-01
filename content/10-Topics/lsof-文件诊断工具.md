@@ -4,7 +4,8 @@ date: 2026-05-29
 tags:
   - topic/Linux
   - topic/故障排查
-status: new
+  - topic/磁盘文件管理
+status: to-review
 aliases:
   - lsof
   - List Open Files
@@ -16,17 +17,17 @@ aliases:
 
 ## 常用命令速查
 
-| 用途 | 命令 |
-|------|------|
-| 查找已删除但仍被进程持有的文件 | `lsof +L1 /挂载点` |
-| 全局搜索已删除的文件 | `lsof -nP \| grep '(deleted)'` |
-| 查看某端口被哪个进程占用 | `lsof -i :端口号` |
-| 查看所有网络连接 | `lsof -i` |
-| 查看某用户打开的文件 | `lsof -u 用户名` |
-| 查看某进程打开的文件 | `lsof -p PID` |
-| 查看某命令打开的文件 | `lsof -c 命令名` |
-| 递归查看目录下被打开的文件 | `lsof +D /路径` |
-| 查看某文件被哪些进程打开 | `lsof /path/to/file` |
+| 用途              | 命令                             | 辅助记忆                                                                                                   |
+| --------------- | ------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| 查找已删除但仍被进程持有的文件 | `lsof +L1 /挂载点`                | `+LN` 代表 [[Linux文件链接计数-link-count\|link count]] < N，此处为`link count < 1`，即`link count = 0` 即已被删除但仍被进程占用 |
+| 全局搜索已删除的文件      | `lsof -nP \| grep '(deleted)'` |                                                                                                        |
+| 查看某端口被哪个进程占用    | `lsof -i :端口号`                 |                                                                                                        |
+| 查看所有网络连接        | `lsof -i`                      |                                                                                                        |
+| 查看某用户打开的文件      | `lsof -u 用户名`                  |                                                                                                        |
+| 查看某进程打开的文件      | `lsof -p PID`                  |                                                                                                        |
+| 查看某命令打开的文件      | `lsof -c 命令名`                  |                                                                                                        |
+| 递归查看目录下被打开的文件   | `lsof +D /路径`                  |                                                                                                        |
+| 查看某文件被哪些进程打开    | `lsof /path/to/file`           |                                                                                                        |
 
 ## 常见用法详解
 
@@ -42,7 +43,7 @@ lsof +L1 /挂载点路径
 lsof -nP | grep '(deleted)'
 ```
 
-`+L1` 表示筛选 link count < 1 的文件，即已被删除但仍有进程持有句柄的文件。
+`+L1` 表示筛选 [[Linux文件链接计数-link-count|link count]] < 1 的文件，即已被删除但仍有进程持有句柄的文件。
 
 ### 2. 网络诊断：查看端口占用
 
@@ -133,7 +134,7 @@ dmserver 12345 dmdba   11w   REG   dm-0    100G  654321 /path/to/file.log (delet
 | `-p` | 按 PID 筛选 |
 | `-c` | 按命令名筛选 |
 | `+D` | 递归搜索目录 |
-| `+L1` | 显示 link count < 1 的文件（已删除） |
+| `+L1` | 显示 [[Linux文件链接计数-link-count|link count]] < 1 的文件（已删除） |
 | `-a` | AND 组合多个条件（默认是 OR） |
 
 ## 无 lsof 时的备用方案：/proc 文件系统
@@ -157,3 +158,6 @@ cat /proc/PID/fd/文件描述符编号
 ## 相关笔记
 
 - [[Linux进程持有已删除文件句柄导致磁盘空间不释放|进程持有已删除文件句柄导致磁盘空间不释放]]
+- [[Linux文件链接计数-link-count|Linux 文件链接计数（Link Count）]] — 理解 `+L1` 背后的 link count 机制
+- [[Linux-Inode详解|Inode 详解]] — `NODE` 字段输出的 inode 编号详解
+- [[Linux-文件描述符fd详解|文件描述符（fd）详解]] — `FD` 字段输出的文件描述符详解

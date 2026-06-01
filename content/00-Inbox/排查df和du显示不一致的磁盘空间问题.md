@@ -12,7 +12,7 @@
 **核心原因：进程持有已删除文件的文件句柄（File Descriptor）。**
 
 在 Linux 中：
-1. `rm -f` 仅删除**目录项（directory entry）**，即文件名与 inode 的映射关系
+1. `rm -f` 仅删除**[[Linux-Dentry目录项详解|目录项（directory entry）]]**，即文件名与 [[Linux-Inode详解|inode]] 的映射关系
 2. 如果有进程已经打开了该文件（open()），则该文件的 **inode 及数据块仍被引用**
 3. 磁盘空间只有在所有持有该文件句柄的进程都 close() 后才会真正释放
 4. `df` 统计的是文件系统层面的**已分配块（allocated blocks）**，包括被删除但仍有进程引用的文件
