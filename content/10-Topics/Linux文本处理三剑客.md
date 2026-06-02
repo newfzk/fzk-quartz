@@ -5,7 +5,7 @@ tags:
   - topic/Linux
   - topic/shell
   - topic/文本处理
-status: to-review
+status: reviewed
 updated: 2026-06-02 00:00:00
 ---
 
@@ -38,16 +38,11 @@ grep -Fxv -f b.txt a.txt   # 在 a.txt 中查找不在 b.txt 的行（差集 A-B
 
 ## sort + comm — 文件比较组合
 
+详见 [[Linux-comm命令详解]]。
+
 ```bash
 comm -3 <(sort a.txt) <(sort b.txt)   # 输出只在单方存在的行
 ```
-
-| comm 选项 | 含义 |
-|-----------|------|
-| `-1` | 不显示第一列（只在文件 1 中） |
-| `-2` | 不显示第二列（只在文件 2 中） |
-| `-3` | 不显示第三列（两文件共有）= 对称差 |
-| `-12` | 只显示两文件共有 = 交集 |
 
 ## 面试要点
 
