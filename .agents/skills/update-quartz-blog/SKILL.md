@@ -7,6 +7,8 @@ description: 更新 Quartz 博客网站，包括自动同步 index.md 链接、�
 
 自动扫描 10-Topics/ 和 20-Questions/ 目录的文件变更，更新 index.md 中的链接列表，然后将笔记文档复制到 Quartz 博客的 content 目录，并同步到 GitHub。同时更新 bagu 项目目录的 git 提交。
 
+**禁止**将 30-Secret-Questions/ 目录下的文件复制到 Quartz 博客的 content 目录下；
+
 ## 执行步骤
 
 使用以下命令执行更新：
@@ -26,7 +28,7 @@ cp -r "/f/GitFiles/studyByMyself/bagu/templates" "/f/GitFiles/studyByMyself/quar
 cd "/f/GitFiles/studyByMyself/bagu"
 git add .
 git commit -m "Update interview questions and knowledge base"
-git push
+# git push
 
 # 第四步：同步 Quartz 博客到 GitHub
 cd "/f/GitFiles/studyByMyself/quartz"

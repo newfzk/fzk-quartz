@@ -1,3 +1,19 @@
+---
+title: Linux 进程持有已删除文件句柄导致磁盘空间不释放
+date: 2026-06-01
+tags:
+  - topic/Linux
+  - topic/文件系统
+  - topic/故障排查
+  - topic/磁盘文件管理
+status: evergreen
+aliases:
+  - df与du显示不一致
+  - 已删除文件空间不释放
+  - 磁盘空间幽灵占用
+  - deleted files taking up space
+---
+
 # Linux 进程持有已删除文件句柄导致磁盘空间不释放
 
 ## 现象
@@ -32,6 +48,15 @@ lsof -nP | grep '(deleted)'
 
 ```bash
 ls -la /proc/*/fd/ 2>/dev/null | grep '(deleted)'
+
+# 更精确：只查找特定路径下的已删除文件
+find /proc/*/fd -type l -lname '*/目标路径/*' 2>/dev/null | \
+  while read link; do
+    target=$(readlink "$link" 2>/dev/null)
+    case "$target" in
+      *' (deleted)') echo "$link -> $target" ;;
+    esac
+  done
 ```
 
 ## 解决方案
@@ -74,4 +99,5 @@ truncate -s 0 /path/to/file.log
 - [[Linux-Inode详解|Inode 详解]] — inode 是文件元信息的核心结构
 - [[Linux-Dentry目录项详解|Dentry 目录项详解]] — dentry 是文件名到 inode 的映射
 - [[Linux-文件描述符fd详解|文件描述符（fd）详解]] — 进程持有文件句柄的本质
+- [[案例-df与du磁盘空间不一致排查|案例：df与du磁盘空间不一致排查]] — 达梦数据库审计文件实战排查记录
 - 待补充：logrotate 日志轮转配置

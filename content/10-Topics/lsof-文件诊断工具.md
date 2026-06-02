@@ -158,6 +158,7 @@ cat /proc/PID/fd/文件描述符编号
 ## 相关笔记
 
 - [[Linux进程持有已删除文件句柄导致磁盘空间不释放|进程持有已删除文件句柄导致磁盘空间不释放]]
+- [[案例-df与du磁盘空间不一致排查|案例：df与du磁盘空间不一致排查]] — 达梦数据库审计文件实战排查
 - [[Linux文件链接计数-link-count|Linux 文件链接计数（Link Count）]] — 理解 `+L1` 背后的 link count 机制
 - [[Linux-Inode详解|Inode 详解]] — `NODE` 字段输出的 inode 编号详解
 - [[Linux-文件描述符fd详解|文件描述符（fd）详解]] — `FD` 字段输出的文件描述符详解

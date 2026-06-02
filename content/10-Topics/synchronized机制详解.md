@@ -12,6 +12,7 @@ aliases:
   - 管程
 related:
   - "[[锁机制实现详解]]"
+  - "[[Java读写锁-ReadWriteLock]]"
   - "[[CAS-Compare-And-Swap]]"
   - "[[乐观锁]]"
   - "[[悲观锁]]"
@@ -352,6 +353,7 @@ synchronized 核心要点：
 
 - [[CAS-Compare-And-Swap]] - CAS 机制详解
 - [[锁机制实现详解]] - 锁的分类与对比
+- [[Java读写锁-ReadWriteLock]] - JVM 级别读写锁
 - [[乐观锁]] - 乐观锁 vs 悲观锁
 - [[悲观锁]] - 悲观锁策略
 - [[Java并发集合-ConcurrentHashMap]] - ConcurrentHashMap 中的 synchronized 应用

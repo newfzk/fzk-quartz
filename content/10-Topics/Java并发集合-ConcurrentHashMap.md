@@ -16,6 +16,8 @@ related:
   - "[[synchronized机制详解]]"
   - "[[锁机制实现详解]]"
   - "[[乐观锁]]"
+  - "[[volatile关键字详解]]"
+  - "[[transient关键字详解]]"
   - "[[Java关键字-transient与volatile]]"
   - "[[红黑树面试常考知识点]]"
   - "[[Java并发集合-CopyOnWriteArrayList]]"
