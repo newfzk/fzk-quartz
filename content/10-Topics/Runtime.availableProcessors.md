@@ -21,6 +21,7 @@ related:
 > [!info] 一句话
 > 返回 **JVM 当前可见的 CPU 核心数**，常用于动态计算线程池大小（如 `corePoolSize = CPU核心数 × 2`）。
 
+经测试，当前jdk版本确实返回的是limit.cpu，适配k8s
 ## 基本用法
 
 ```java
@@ -76,8 +77,6 @@ public int availableProcessors() {
 // 2. 若容器有 limits.cpu 限制，返回限额值
 // 3. 若无限制，返回宿主机的 CPU 总数
 ```
-
-> 详细容器问题见下方的 [K8s 注意事项](#在-k8s-中的注意事项)。
 
 ## 返回值的各种情况
 

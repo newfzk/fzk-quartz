@@ -2,7 +2,7 @@
 title: Linux 常用命令速查
 type: basic-note
 date: 2026-06-03
-tags: linux, 命令, 速查
+tags:
 ---
 
 # Linux 常用命令速查

@@ -102,6 +102,7 @@ netfilter-persistent save
 
 ## 参考链接
 
+- [[iptables详解]] — iptables 完整架构（四表五链、包流转路径、连接跟踪）
 - [柠檬微趣-笔试-Q3-网络配置](../30-Secret-Questions/柠檬微趣-笔试-Q3-网络配置.md)
 - [[Docker网络模式-bridge]]
 - [[Linux-IP转发与路由]]

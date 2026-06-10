@@ -16,6 +16,7 @@ related:
   - "[[ThreadPoolExecutor核心参数]]"
   - "[[Java线程池创建方式]]"
   - "[[线程池监控与调优]]"
+status: reviewed
 ---
 
 # JVM 内存溢出（OOM）预防策略
