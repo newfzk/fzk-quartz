@@ -1,18 +1,17 @@
 ---
 title: Spring Boot — java.io.tmpdir 临时目录配置
 date: 2026-06-08
-tags:
-  - topic/Spring-Boot
-  - topic/JVM
-  - topic/故障排查
-  - language/java
-status: reviewed
 aliases:
   - java.io.tmpdir
   - Tomcat tempDir
   - Tomcat临时目录
 related:
   - "[[Java-启动参数]]"
+tags:
+  - language/java
+  - topic/spring-boot
+  - topic/故障排查
+status: to-review
 ---
 
 # Spring Boot — java.io.tmpdir 临时目录配置

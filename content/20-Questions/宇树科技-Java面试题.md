@@ -17,6 +17,99 @@ type: question
 ### 1. Java 集合核心原理
 
 - ArrayList 和 LinkedList 底层原理与适用场景
+
+> [!tip] **回答要点**
+>
+> 详细解析见下方折叠块 👇
+
+> [!info]- 🔹 底层原理详解
+> **ArrayList（动态数组）**
+> - 继承 `AbstractList`，底层是 `Object[]` 数组
+> - 默认初始容量 10，**懒加载**（JDK 8+ 首次 add 才创建数组）
+> - **扩容机制**：`grow()` 方法，新容量 = 旧容量 + 旧容量 >> 1（**1.5倍**），通过 `Arrays.copyOf()` 拷贝到新数组（本质是 `System.arraycopy()` 本地方法）
+> - **随机访问** `get/set`：O(1)，数组下标直接寻址
+> - **尾部插入** `add(E)`：均摊 O(1)，扩容时退化 O(n)
+> - **中间插入/删除**：O(n)，需要批量移动元素
+> - **内存特征**：连续内存 → CPU 缓存友好（空间局部性），仅存储元素数据
+>
+> **LinkedList（双向链表）**
+> - 继承 `AbstractSequentialList`，底层是 Node 内部类：
+>   ```java
+>   private static class Node<E> {
+>       E item;
+>       Node<E> next;  // 后继指针
+>       Node<E> prev;  // 前驱指针
+>   }
+>   ```
+> - 维护 `first` 和 `last` 两个头尾指针
+> - **随机访问** `get(i)`：O(n)，二分遍历以优化（`i < size/2` 从头找，否则从尾找）
+> - **头尾插入/删除**：O(1)，只需修改指针
+> - **中间插入/删除**：O(n) 查找位置 + O(1) 修改指针
+> - **内存特征**：离散内存 → CPU 缓存不友好，每个节点多 24~32 字节引用开销
+> - 实现了 **Deque** 接口，可当作队列/双端队列/栈使用
+
+> [!question]- 🔹 面试官追问的 4 个坑
+> 1. **"ArrayList 插入真的比 LinkedList 慢吗？"**
+>    → **不一定！** 中间插入时 LinkedList 查找位置已经是 O(n)，且节点离散分配导致 CPU cache miss 率高。数据量大时 **ArrayList 的批量移动可能比 LinkedList 的逐个寻址更快**。实测：10 万级数据中间插入，ArrayList 完胜。
+>
+> 2. **"什么时候用 LinkedList？"**
+>    → **只在头尾操作频繁且不需要随机访问时**。典型如队列（`offer/poll`）、双端队列、LRU 缓存雏形。日常开发 **90% 的场景用 ArrayList** 就够了。
+>
+> 3. **"ArrayList 扩容怎么避免性能损耗？"**
+>    → **预估容量**。构造时指定初始大小：`new ArrayList<>(expectedSize)`。例：已知要存 1000 条数据就 `new ArrayList<>(1000)`，避免多次扩容。
+>
+> 4. **"LinkedList 能当作队列/栈用吗？"**
+>    → 可以，它实现了 `Deque` 接口，`addFirst/addLast/removeFirst/removeLast/push/pop/offer/poll` 全是 O(1)。但**推荐使用 `ArrayDeque`**，它用循环数组实现，内存更紧凑、性能更好。
+
+> [!summary]- 🔹 性能对比一览
+> | 操作 | ArrayList | LinkedList |
+> |------|-----------|------------|
+> | `get(i)` 随机访问 | **O(1)** ✅ 数组下标直取 | O(n) ❌ 需遍历 |
+> | `add(E)` 尾部插入 | **O(1)** 均摊（扩容时 O(n)） | O(1) ✅ |
+> | `add(i, E)` 中间插入 | O(n) 移动元素 | O(n) 查找位置 + O(1) 改指针 |
+> | `remove(i)` 删除 | O(n) 移动元素 | O(n) 查找位置 + O(1) 改指针 |
+> | 内存占用 | **低** ✅ 仅存元素数据 | 高 ❌ 额外 2 引用/节点 |
+> | CPU 缓存 | **友好** ✅ 连续内存 | 不友好 ❌ 离散内存 |
+>
+> **📌 一句话结论**：95% 的场景选 ArrayList，只有明确需要频繁头尾操作时才考虑 LinkedList。
+
+> [!example]- 🔹 常用场景代码示例
+> **场景 1：随机读取排行榜 → ArrayList**
+> ```java
+> List<Score> leaderboard = new ArrayList<>();
+> leaderboard.add(new Score("Alice", 98));
+> leaderboard.add(new Score("Bob", 95));
+> // 查第 1 名 → O(1)
+> Score top1 = leaderboard.get(0);
+> ```
+>
+> **场景 2：消息队列（FIFO）→ LinkedList**
+> ```java
+> // 适合：频繁头部取出 + 尾部放入
+> Queue<RobotCommand> cmdQueue = new LinkedList<>();
+> cmdQueue.offer(new Command("前进"));   // 尾部入队 O(1)
+> cmdQueue.offer(new Command("左转"));
+> Command cmd = cmdQueue.poll();         // 头部出队 O(1)
+> ```
+>
+> **场景 3：栈结构 → LinkedList / ArrayDeque**
+> ```java
+> Deque<String> stack = new LinkedList<>();
+> stack.push("A");  // 头部压入
+> stack.push("B");
+> String top = stack.pop();  // 头部弹出 → "B"
+> ```
+>
+> **场景 4：遍历全部元素 → ArrayList 更快**
+> ```java
+> // for-each 遍历时 ArrayList 利用 CPU 预读机制
+> // 连续内存 → 效率是 LinkedList 的 2~5 倍
+> List<Integer> list = new ArrayList<>();
+> for (int v : list) { /* 缓存友好，速度更快 */ }
+> ```
+
+> 🔗 **相关知识**：[[Java集合-ArrayList与LinkedList底层原理]]
+
 - HashMap 底层实现、扩容机制与哈希冲突解决
 - ConcurrentHashMap 1.7 和 1.8 的主要区别
 

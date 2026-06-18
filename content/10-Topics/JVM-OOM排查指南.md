@@ -2,7 +2,11 @@
 title: JVM OOM 排查指南
 type: basic-note
 date: 2026-06-03
-tags: java, jvm, OOM, 排查, GC
+tags:
+  - language/java
+  - topic/JVM
+  - topic/故障排查
+status: to-review
 ---
 
 # JVM OOM 排查指南
@@ -69,3 +73,6 @@ jmap -dump:format=b,file=dump.hprof [pid]
 - [[jstat-命令详解]]
 - [[JVM-堆内存分代模型]]
 - [[JVM内存溢出预防]]
+- [[JVM-对象创建与内存分配]] — 对象创建与内存分配
+- [[GC-Roots详解]] — GC Roots 分析
+- [[快手电商-一面-19题总结]] — Q11 OOM 排查

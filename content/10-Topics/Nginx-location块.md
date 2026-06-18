@@ -2,7 +2,10 @@
 title: nginx location块
 type: basic-note
 date: 2025-08-02
-tags: nginx, conf, location
+tags:
+  - topic/Nginx
+  - topic/计算机网络
+status: to-review
 ---
 
 # nginx location块

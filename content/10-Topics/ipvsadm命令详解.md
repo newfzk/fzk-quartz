@@ -1,13 +1,12 @@
 ---
 title: ipvsadm命令详解
 date: 2026-06-10
+updated: 2026-06-10
 tags:
   - topic/计算机网络
-  - topic/Linux
   - topic/负载均衡
-  - topic/命令
+  - topic/Linux/命令
 status: to-review
-updated: 2026-06-10
 ---
 
 ## 概述
@@ -30,12 +29,12 @@ ipvsadm -S|-R
 
 ### 常用命令分类
 
-| 操作 | 命令 | 作用对象 |
-|------|------|---------|
-| 增 | `-A, -a` | 添加虚拟服务 / 添加 Real Server |
-| 改 | `-E, -e` | 修改虚拟服务 / 修改 Real Server |
-| 删 | `-D, -d` | 删除虚拟服务 / 删除 Real Server |
-| 查 | `-L`（或 `-l`） | 列出当前配置和统计数据 |
+| 操作  | 命令           | 作用对象                    |
+| --- | ------------ | ----------------------- |
+| 增   | `-A, -a`     | 添加虚拟服务 / 添加 Real Server |
+| 改   | `-E, -e`     | 修改虚拟服务 / 修改 Real Server |
+| 删   | `-D, -d`     | 删除虚拟服务 / 删除 Real Server |
+| 查   | `-L`（或 `-l`） | 列出当前配置和统计数据             |
 
 ### 服务地址类型
 
@@ -236,8 +235,6 @@ ipvsadm -L -n
 # keepalived 检测到 RS 宕机 → 自动 ipvsadm -d 摘除
 # keepalived 检测到 RS 恢复 → 自动 ipvsadm -a 加入
 ```
-
-> [[keepalived 配置]]（如存在关联笔记）
 
 ### 6.3 查看超时与连接
 

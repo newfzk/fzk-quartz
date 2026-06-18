@@ -1,23 +1,26 @@
 ---
 title: Docker cgroup v2 兼容性问题
-date: 2026-06-09
-tags:
-  - topic/Docker
-  - topic/Linux
-  - topic/容器
-  - topic/故障排查
-  - topic/cgroup
-status: to-review
+date: 2026-06-11
 aliases:
   - cgroups mountpoint does not exist
   - Docker cgroup v2 compatibility
   - Ubuntu 22.04 Docker
   - Docker version compatibility
+  - K8s cgroup v2
+updated: 2026-06-11
+tags:
+  - topic/Docker
+  - topic/Linux
+  - topic/容器
+  - topic/故障排查
+status: to-review
 ---
 
-# Docker cgroup v2 兼容性问题
+# Docker / K8s cgroup v2 兼容性问题
 
 ## 问题现象
+
+### Docker 场景
 
 在 **Ubuntu 22.04+** 系统上运行 `docker run`，容器启动失败，报错：
 
@@ -26,6 +29,16 @@ docker: Error response from daemon: cgroups: cgroup mountpoint does not exist: u
 ```
 
 Docker daemon 无法找到 cgroup 挂载点，容器无法启动。
+
+### Kubernetes 场景
+
+在 **Ubuntu 22.04** 上运行 **Kubernetes v1.18**（或更早版本），kubelet 启动失败，报错：
+
+```
+unable to find data in memory cache
+```
+
+Kubernetes v1.18 对 cgroup v2 仅提供 **Alpha** 级别的实验性支持，功能不完整，稳定性无法保证。当 kubelet 尝试在默认启用 cgroup v2 的 Ubuntu 22.04 上运行时，就会因不兼容而启动失败。
 
 ## 根因分析
 
@@ -47,6 +60,19 @@ Ubuntu 22.04 默认使用 **cgroup v2** 作为资源管理子系统。
 │  < 20.10      │    ✅       │   ❌ 不支持              │
 │  20.10 ~ 24.x │    ✅       │   ✅ 默认支持            │
 │  25+          │    ⚠️ 遗留  │   ✅ 完全转向 v2         │
+└─────────────────────────────────────────────────────────┘
+```
+
+### Kubernetes 版本兼容性
+
+```
+┌─────────────────────────────────────────────────────────┐
+│  K8s 版本     │  cgroup v2 支持级别                      │
+├─────────────────────────────────────────────────────────┤
+│  < 1.18       │   ❌ 不支持                             │
+│  1.18 ~ 1.24  │   ⚠️ Alpha（实验性，不推荐生产使用）      │
+│  1.25 ~ 1.26  │   🧪 Beta                               │
+│  1.27+        │   ✅ GA（默认启用）                      │
 └─────────────────────────────────────────────────────────┘
 ```
 
@@ -213,7 +239,7 @@ docker info | grep -i cgroup
 
 ### 方案二：回退到 cgroup v1（不推荐 ⚠️）
 
-如果无法升级 Docker，可通过内核参数强制使用 cgroup v1：
+如果无法升级 Docker，或 Kubernetes 版本过低不支持 cgroup v2，可通过内核参数强制使用 cgroup v1：
 
 ```bash
 # 编辑 GRUB 配置
@@ -221,6 +247,9 @@ sudo vim /etc/default/grub
 
 # 在 GRUB_CMDLINE_LINUX 中添加：
 # systemd.unified_cgroup_hierarchy=0
+
+# 修改前示例：GRUB_CMDLINE_LINUX=""
+# 修改后示例：GRUB_CMDLINE_LINUX="systemd.unified_cgroup_hierarchy=0"
 
 # 更新 GRUB 并重启
 sudo update-grub
@@ -231,7 +260,7 @@ stat -fc %T /sys/fs/cgroup/
 # 输出: tmpfs → cgroup v1
 ```
 
-> **为什么不推荐？** cgroup v1 是旧方案，Ubuntu 22.04 的 systemd 和内核都已面向 v2 优化。长期来看所有容器工具都会抛弃 v1，升级 Docker 才是正道。
+> **为什么不推荐？** cgroup v1 是旧方案，Ubuntu 22.04 的 systemd 和内核都已面向 v2 优化。长期来看所有容器工具都会抛弃 v1，升级 Docker 才是正道。对于 Kubernetes 场景，升级集群版本至 v1.25+（cgroup v2 GA）是更优选择。
 
 ### 方案三：配置 Docker daemon 的 cgroup driver（辅助手段）
 
@@ -269,3 +298,4 @@ sudo systemctl restart docker
 
 - [[Linux-cgroup-控制组]] — cgroup 基础概念与 v1/v2 对比
 - [[Docker网络模式-bridge]] — Docker 网络模式
+- [[Ubuntu-查看系统版本号]] — Ubuntu 版本查询方法

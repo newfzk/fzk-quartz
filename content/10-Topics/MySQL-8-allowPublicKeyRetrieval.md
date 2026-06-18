@@ -1,17 +1,17 @@
 ---
 title: MySQL 8 — allowPublicKeyRetrieval 连接参数
 date: 2026-06-08
-tags:
-  - topic/MySQL
-  - topic/故障排查
-  - language/sql
-status: reviewed
 aliases:
   - Public Key Retrieval is not allowed
   - MySQL caching_sha2_password
   - JDBC allowPublicKeyRetrieval
 related:
   - "[[Mysql常用配置]]"
+tags:
+  - language/sql
+  - topic/MySQL
+  - topic/故障排查
+status: to-review
 ---
 
 # MySQL 8 — allowPublicKeyRetrieval 连接参数

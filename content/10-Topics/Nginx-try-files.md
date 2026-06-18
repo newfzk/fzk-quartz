@@ -2,7 +2,10 @@
 title: nginx请求尝试配置
 type: basic-note
 date: 2025-05-29
-tags: nginx, conf, try_files
+tags:
+  - topic/Nginx
+  - topic/计算机网络
+status: to-review
 ---
 
 # nginx请求尝试配置

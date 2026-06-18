@@ -1,10 +1,6 @@
 ---
 title: synchronized 机制详解
 date: 2026-05-28
-tags:
-  - topic/并发控制
-  - language/java
-status: to-review
 aliases:
   - synchronized
   - Java内置锁
@@ -12,10 +8,15 @@ aliases:
   - 管程
 related:
   - "[[锁机制实现详解]]"
+  - "[[公平锁与非公平锁]]"
   - "[[Java读写锁-ReadWriteLock]]"
   - "[[CAS-Compare-And-Swap]]"
   - "[[乐观锁]]"
   - "[[悲观锁]]"
+tags:
+  - language/java
+  - topic/java/并发
+status: to-review
 ---
 
 ## 一、synchronized 是什么
@@ -242,7 +243,7 @@ synchronized (this) {
 | 使用方式 | 关键字，自动加解锁 | `lock()`/`unlock()`，需 finally 释放 |
 | 性能 | JDK 1.6 优化后与 ReentrantLock 相近 | 相近 |
 | 灵活性 | 低：不可中断，不可超时 | 高：可中断，可超时，可轮询 |
-| 公平性 | 非公平（无法选择） | 支持公平和非公平 |
+| 公平性 | 非公平（无法选择） | [[公平锁与非公平锁|支持公平和非公平]] |
 | 条件变量 | 配合 `wait()/notify()` | 支持多个 `Condition` |
 | 锁状态 | 无法查询 | `tryLock()`、`isHeldByCurrentThread()` |
 
@@ -358,3 +359,4 @@ synchronized 核心要点：
 - [[悲观锁]] - 悲观锁策略
 - [[Java并发集合-ConcurrentHashMap]] - ConcurrentHashMap 中的 synchronized 应用
 - [[Java并发集合-ConcurrentHashMap与CopyOnWriteArrayList]] - 并发容器对比与选型
+- [[快手电商-一面-19题总结]] — Q5 synchronized 锁对象分析

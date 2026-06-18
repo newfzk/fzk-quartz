@@ -1,11 +1,11 @@
 ---
 title: Python集合类型
 date: 2026-06-02
-tags:
-  - "#language/python"
-  - topic/集合
-status: to-review
 updated: 2026-06-02 00:00:00
+tags:
+  - language/python
+  - topic/数据结构
+status: to-review
 ---
 
 ## 核心概念

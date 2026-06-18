@@ -1,10 +1,6 @@
 ---
 title: Java 线程池创建方式
 date: 2026-06-01
-tags:
-  - topic/并发控制
-  - topic/线程池
-  - language/java
 aliases:
   - Executors
   - 线程池创建
@@ -16,6 +12,11 @@ related:
   - "[[进程线程协程]]"
   - "[[Java虚拟线程]]"
   - "[[Runtime.availableProcessors]]"
+tags:
+  - language/java
+  - topic/java/并发
+  - topic/线程池
+status: to-review
 ---
 
 # Java 线程池创建方式

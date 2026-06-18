@@ -1,10 +1,9 @@
 ---
+created: 2026-06-02
 tags:
   - topic/Linux
-  - topic/shell
-  - topic/文本处理
-created: 2026-06-02
-status: reviewed
+  - topic/Linux/命令
+status: to-review
 ---
 
 ## 核心概念

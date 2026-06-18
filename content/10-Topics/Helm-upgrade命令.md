@@ -2,7 +2,11 @@
 title: helm upgrade
 type: basic-note
 date: 2025-06-14
-tags: helm, command upgrade
+tags:
+  - topic/Helm
+  - topic/Kubernetes
+  - topic/Linux/命令
+status: to-review
 ---
 
 # helm upgrade

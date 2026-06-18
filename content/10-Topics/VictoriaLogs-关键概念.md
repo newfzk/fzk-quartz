@@ -2,7 +2,10 @@
 title: VictoriaLogs 关键概念
 type: basic-note
 date: 2025-05-21
-tags: victorialogs, concept
+tags:
+  - topic/VictoriaLogs
+  - topic/日志
+status: to-review
 ---
 
 # VictoriaLogs 关键概念

@@ -1,16 +1,15 @@
 ---
 title: Linux sysfs 文件系统
 date: 2026-06-02
-tags:
-  - topic/Linux
-  - topic/VFS
-  - topic/硬件
-status: evergreen
 aliases:
   - sysfs
   - /sys
   - 系统文件系统
   - System Filesystem
+tags:
+  - topic/Linux
+  - topic/Linux/文件系统
+status: to-review
 ---
 
 # Linux sysfs 文件系统

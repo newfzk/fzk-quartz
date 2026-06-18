@@ -1,15 +1,14 @@
 ---
 title: Linux proc 文件系统
 date: 2026-06-02
-tags:
-  - topic/Linux
-  - topic/VFS
-  - topic/进程管理
-status: evergreen
 aliases:
   - procfs
   - /proc
   - 进程文件系统
+tags:
+  - topic/Linux
+  - topic/Linux/文件系统
+status: to-review
 ---
 
 # Linux proc 文件系统

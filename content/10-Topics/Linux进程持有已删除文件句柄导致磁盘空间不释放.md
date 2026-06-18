@@ -1,17 +1,16 @@
 ---
 title: Linux 进程持有已删除文件句柄导致磁盘空间不释放
 date: 2026-06-01
-tags:
-  - topic/Linux
-  - topic/文件系统
-  - topic/故障排查
-  - topic/磁盘文件管理
-status: evergreen
 aliases:
   - df与du显示不一致
   - 已删除文件空间不释放
   - 磁盘空间幽灵占用
   - deleted files taking up space
+tags:
+  - topic/Linux
+  - topic/Linux/文件系统
+  - topic/故障排查
+status: to-review
 ---
 
 # Linux 进程持有已删除文件句柄导致磁盘空间不释放

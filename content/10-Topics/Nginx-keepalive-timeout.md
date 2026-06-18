@@ -2,7 +2,10 @@
 title: nginx-conf-keepalived-timeout
 type: basic-note
 date: 2025-10-24
-tags: nginx, conf, timeout
+tags:
+  - topic/Nginx
+  - topic/计算机网络
+status: to-review
 ---
 
 # nginx-conf-keepalived-timeout

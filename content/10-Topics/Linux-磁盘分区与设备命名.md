@@ -1,11 +1,11 @@
 ---
 title: Linux-磁盘分区与设备命名
 date: 2026-06-02
+updated: 2026-06-02 00:00:00
 tags:
   - topic/Linux
-  - topic/磁盘
+  - topic/Linux/磁盘
 status: to-review
-updated: 2026-06-02 00:00:00
 ---
 
 ## 核心概念

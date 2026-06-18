@@ -1,12 +1,11 @@
 ---
 title: IPVS — IP Virtual Server 详解
 date: 2026-06-10
+updated: 2026-06-10
 tags:
   - topic/计算机网络
-  - topic/Linux
   - topic/负载均衡
 status: to-review
-updated: 2026-06-10
 ---
 
 ## 概述
@@ -82,13 +81,13 @@ TCP 01:55  ESTABLISHED 10.0.0.2:12345     10.0.0.100:80      10.0.0.11:80
 
 ### 2.1 NAT 模式（最常用）
 
-| 特性 | 说明 |
-|------|------|
-| **流程** | Director 做 DNAT + SNAT，修改请求和目标 IP/Port |
-| **RS 网关** | 必须指向 Director 的 IP |
-| **性能** | 中等（进出都经过 Director） |
-| **网络要求** | Director 和 RS 在同一子网 |
-| **端口映射** | 支持（VIP:Port1 → RS:Port2） |
+| 特性        | 说明                                     |
+| --------- | -------------------------------------- |
+| **流程**    | Director 做 DNAT + SNAT，修改请求和目标 IP/Port |
+| **RS 网关** | 必须指向 Director 的 IP                     |
+| **性能**    | 中等（进出都经过 Director）                     |
+| **网络要求**  | Director 和 RS 在同一子网                    |
+| **端口映射**  | 支持（VIP:Port1 → RS:Port2）               |
 
 ```
 请求方向:  Client → Director(VIP) → RS
@@ -112,7 +111,7 @@ TCP 01:55  ESTABLISHED 10.0.0.2:12345     10.0.0.100:80      10.0.0.11:80
 ```
 
 > [!note] DR 模式的 ARP 抑制
-> RS 必须在 lo 上配置 VIP 且设置 `arp_ignore=1` 和 `arp_announce=2`，防止 RS 直接响应 ARP 请求导致客户端绕过 Director。
+> RS 必须在 lo 上配置 VIP 且设置 `arp_ignore=1` 和 `arp_announce=2`，防止 RS 直接响应 ARP 请求导致客户端绕过 Director，导致负载均衡失效。
 
 ### 2.3 TUN 模式（IP Tunneling，IP 隧道）
 
@@ -271,6 +270,7 @@ ipvsadm-save > /etc/sysconfig/ipvsadm
 - [[ipvsadm命令详解|ipvsadm 命令详解]] — IPVS 的管理命令
 - [[iptables端口转发|iptables 端口转发]] — iptables 实现端口转发与 IPVS 的对比
 - [[Docker网络模式-bridge|Docker 网络模式 — bridge]] — K8s/Docker 环境中 IPVS 的典型应用场景
+- [[K8s-Service-DNS域名解析规则|K8s Service DNS 域名解析规则]] — K8s Service 发现与 DNS 解析机制
 
 ## 参考资料
 

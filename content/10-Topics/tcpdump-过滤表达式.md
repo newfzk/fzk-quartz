@@ -1,16 +1,16 @@
 ---
 title: tcpdump 过滤表达式
 date: 2026-06-03
-tags:
-  - topic/tcpdump
-  - topic/网络
-  - topic/BPF
-status: evergreen
 aliases:
   - BPF 过滤
   - tcpdump 过滤
   - 伯克利包过滤器
   - Berkeley Packet Filter
+tags:
+  - topic/Linux
+  - topic/Linux/命令
+  - topic/计算机网络
+status: to-review
 ---
 
 # tcpdump 过滤表达式

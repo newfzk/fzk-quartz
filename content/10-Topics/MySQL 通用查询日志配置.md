@@ -1,13 +1,15 @@
 ---
 title: MySQL 通用查询日志配置
 date: 2026-05-26
-tags:
-  - topic/数据库配置
-  - topic/性能优化
-  - language/sql
 aliases:
   - 查询日志配置
   - 查询优化配置
+tags:
+  - language/sql
+  - topic/MySQL
+  - topic/数据库/日志
+  - topic/数据库/配置
+status: to-review
 ---
 
 # MySQL 通用查询日志配置

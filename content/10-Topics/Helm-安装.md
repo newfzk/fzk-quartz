@@ -2,7 +2,10 @@
 title: helm-install
 type: basic-note
 date: 2025-05-13
-tags: helm, install
+tags:
+  - topic/Helm
+  - topic/Kubernetes
+status: to-review
 ---
 
 # helm-install

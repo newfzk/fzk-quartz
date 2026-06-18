@@ -1,16 +1,15 @@
 ---
 title: tcpdump 常见场景示例
 date: 2026-06-03
-tags:
-  - topic/tcpdump
-  - topic/网络排查
-  - topic/故障排查
-  - topic/实战
-status: evergreen
 aliases:
   - tcpdump 场景
   - tcpdump 实战
   - tcpdump 示例
+tags:
+  - topic/Linux
+  - topic/Linux/命令
+  - topic/计算机网络
+status: to-review
 ---
 
 # tcpdump 常见场景示例

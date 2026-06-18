@@ -1,15 +1,15 @@
 ---
 title: Linux Inode 详解
 date: 2026-06-01
-tags:
-  - topic/Linux
-  - topic/文件系统
-status: evergreen
 aliases:
   - inode
   - 索引节点
   - index node
   - inode 节点
+tags:
+  - topic/Linux
+  - topic/Linux/文件系统
+status: to-review
 ---
 
 # Linux Inode 详解

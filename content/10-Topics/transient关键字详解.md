@@ -1,10 +1,6 @@
 ---
 title: transient 关键字详解
 date: 2026-05-28
-tags:
-  - topic/Java基础
-  - topic/序列化
-  - language/java
 aliases:
   - transient
   - transient关键字
@@ -12,6 +8,11 @@ aliases:
 related:
   - "[[volatile关键字详解]]"
   - "[[Java并发集合-ConcurrentHashMap]]"
+tags:
+  - language/java
+  - topic/java/基础
+  - topic/序列化
+status: to-review
 ---
 
 # `transient` 关键字

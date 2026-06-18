@@ -1,11 +1,11 @@
 ---
 title: Linux-ext4文件系统
 date: 2026-06-02
+updated: 2026-06-02 00:00:00
 tags:
   - topic/Linux
-  - topic/文件系统
+  - topic/Linux/文件系统
 status: to-review
-updated: 2026-06-02 00:00:00
 ---
 
 ## 核心概念

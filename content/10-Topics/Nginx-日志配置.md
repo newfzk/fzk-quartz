@@ -2,7 +2,10 @@
 title: nginx日志配置
 type: basic-note
 date: 2025-06-25
-tags: nginx, conf, log
+tags:
+  - topic/Nginx
+  - topic/计算机网络
+status: to-review
 ---
 
 # nginx日志配置

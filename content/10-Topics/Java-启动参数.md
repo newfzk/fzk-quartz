@@ -2,7 +2,10 @@
 title: Java 启动参数
 type: basic-note
 date: 2025-12-15
-tags: java, jvm, 参数, 命令
+tags:
+  - language/java
+  - topic/JVM
+status: to-review
 ---
 
 # Java 启动参数

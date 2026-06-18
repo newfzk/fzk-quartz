@@ -1,14 +1,13 @@
 ---
 title: Ubuntu 查看系统版本号
 date: 2026-06-09
-tags:
-  - topic/Linux
-  - topic/Ubuntu
-  - topic/命令
-status: to-review
 aliases:
   - lsb_release
   - Ubuntu版本查询
+tags:
+  - topic/Linux
+  - topic/Linux/命令
+status: to-review
 ---
 
 # Ubuntu 查看系统版本号

@@ -1,14 +1,13 @@
 ---
 title: Vim 光标跳转与返回
 date: 2026-06-08
-tags:
-  - topic/Vim
-  - topic/编辑器
-  - topic/效率工具
-status: reviewed
 aliases:
   - Vim跳转
   - Vim导航
+tags:
+  - topic/Vim
+  - topic/工具
+status: to-review
 ---
 
 # Vim 光标跳转与返回

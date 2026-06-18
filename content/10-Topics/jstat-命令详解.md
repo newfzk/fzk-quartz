@@ -2,7 +2,11 @@
 title: jstat 命令详解
 type: basic-note
 date: 2026-06-03
-tags: java, jvm, jstat, 命令, GC
+tags:
+  - language/java
+  - topic/JVM
+  - topic/Linux/命令
+status: to-review
 ---
 
 # jstat 命令详解
@@ -59,3 +63,4 @@ $ jstat -gc 1 1000
 - [[JVM-堆内存分代模型]]
 - [[JVM-OOM排查指南]]
 - [[JVM内存溢出预防]]
+- [[JVM-GC类型对比]]

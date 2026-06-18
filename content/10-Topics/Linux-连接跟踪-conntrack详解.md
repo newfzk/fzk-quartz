@@ -1,15 +1,14 @@
 ---
 title: Linux 连接跟踪 — conntrack 详解
 date: 2026-06-10
-tags:
-  - topic/Linux
-  - topic/计算机网络
-  - topic/内核
-status: to-review
 aliases:
   - Connection Tracking
   - nf_conntrack
   - 连接跟踪
+tags:
+  - topic/Linux
+  - topic/计算机网络
+status: to-review
 ---
 
 ## 概述

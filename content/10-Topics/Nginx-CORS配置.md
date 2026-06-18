@@ -2,7 +2,10 @@
 title: nginx跨域资源共享配置
 type: basic-note
 date: 2025-05-28
-tags: nginx, conf, cors
+tags:
+  - topic/Nginx
+  - topic/计算机网络
+status: to-review
 ---
 
 # nginx跨域资源共享配置

@@ -2,7 +2,10 @@
 title: Nginx-请求体存储缓冲区大小配置
 type: basic-note
 date: 2025-08-26
-tags: nginx, conf, request, client_body_buffer_size
+tags:
+  - topic/Nginx
+  - topic/计算机网络
+status: to-review
 ---
 
 # Nginx-请求体存储缓冲区大小配置

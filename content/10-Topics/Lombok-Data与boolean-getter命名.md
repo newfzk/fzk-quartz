@@ -1,15 +1,14 @@
 ---
 title: Lombok @Data 与 boolean 类型 getter 命名
 date: 2026-06-08
-tags:
-  - topic/Java基础
-  - topic/Lombok
-  - language/java
-status: reviewed
 aliases:
   - Lombok is方法
   - boolean getter命名
   - Data注解
+tags:
+  - language/java
+  - topic/java/基础
+status: to-review
 ---
 
 # Lombok @Data 与 boolean 类型 getter 命名

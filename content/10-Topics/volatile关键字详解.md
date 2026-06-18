@@ -1,10 +1,6 @@
 ---
 title: volatile 关键字详解
 date: 2026-05-28
-tags:
-  - topic/Java基础
-  - topic/并发控制
-  - language/java
 aliases:
   - volatile
   - volatile关键字
@@ -14,6 +10,10 @@ related:
   - "[[synchronized机制详解]]"
   - "[[Java并发集合-ConcurrentHashMap]]"
   - "[[transient关键字详解]]"
+tags:
+  - language/java
+  - topic/java/并发
+status: to-review
 ---
 
 # `volatile` 关键字

@@ -1,9 +1,6 @@
 ---
 title: TLB — 转换检测缓冲区（快表）
 date: 2026-06-01
-tags:
-  - topic/操作系统
-  - topic/计算机组成
 aliases:
   - TLB
   - Translation Lookaside Buffer
@@ -13,6 +10,10 @@ aliases:
 related:
   - "[[进程线程协程]]"
   - "[[Linux-Inode详解]]"
+tags:
+  - topic/操作系统
+  - topic/计算机组成
+status: to-review
 ---
 
 # TLB — 转换检测缓冲区（快表）

@@ -1,11 +1,6 @@
 ---
 title: 脏读（Dirty Read）
 date: 2026-05-23
-tags:
-  - topic/数据库
-  - topic/数据库事务
-  - topic/并发控制
-status: to-review
 updated: 2026-05-26 15:30:00
 aliases:
   - Dirty Read
@@ -16,6 +11,11 @@ related:
   - "[[幻读-Phantom-Read]]"
   - "[[隔离级别]]"
   - "[[事务ACID]]"
+tags:
+  - language/sql
+  - topic/MySQL
+  - topic/数据库/事务
+status: to-review
 ---
 
 # 脏读（Dirty Read）

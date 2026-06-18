@@ -1,12 +1,11 @@
 ---
 title: Windows端口转发-proxy
 date: 2026-06-02
+updated: 2026-06-02 12:00:00
 tags:
   - topic/计算机网络
   - topic/Windows
-  - topic/运维
 status: to-review
-updated: 2026-06-02 12:00:00
 ---
 
 ## 核心概念

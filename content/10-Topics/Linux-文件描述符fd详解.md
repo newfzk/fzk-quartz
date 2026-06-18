@@ -1,17 +1,17 @@
 ---
 title: Linux 文件描述符（fd）详解
 date: 2026-06-01
-tags:
-  - topic/Linux
-  - topic/文件系统
-  - topic/进程管理
-status: evergreen
 aliases:
   - fd
   - 文件描述符
   - file descriptor
   - 文件句柄
   - 进程文件描述符表
+tags:
+  - topic/Linux
+  - topic/Linux/文件系统
+  - topic/Linux/进程管理
+status: to-review
 ---
 
 # Linux 文件描述符（fd）详解

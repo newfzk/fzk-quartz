@@ -1,16 +1,15 @@
 ---
 title: Linux 文件链接计数（Link Count）
 date: 2026-06-01
-tags:
-  - topic/Linux
-  - topic/文件系统
-  - topic/磁盘管理
-status: evergreen
 aliases:
   - link count
   - 链接计数
   - 硬链接计数
   - nlink
+tags:
+  - topic/Linux
+  - topic/Linux/文件系统
+status: to-review
 ---
 
 # Linux 文件链接计数（Link Count）

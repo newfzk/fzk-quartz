@@ -1,11 +1,13 @@
 ---
 title: MySQL索引类型
-tags:
-  - topic/数据库
-  - language/sql
 aliases:
   - MySQL Index Types
   - MySQL 索引分类
+tags:
+  - language/sql
+  - topic/MySQL
+  - topic/数据库/索引
+status: to-review
 ---
 
 # MySQL索引类型
@@ -39,6 +41,7 @@ aliases:
 - 使用 `MATCH ... AGAINST` 语法查询
 - MyISAM 和 InnoDB 均支持，InnoDB 从 MySQL 5.6 开始支持
 - 适用于搜索引擎、文章内容检索等场景
+- 详细内容见 → [[MySQL-全文索引-FULLTEXT]]
 
 ### R-Tree（空间索引）
 
@@ -84,7 +87,7 @@ ALTER TABLE table ADD PRIMARY KEY (column);
 CREATE FULLTEXT INDEX idx_fulltext ON table(column);
 ```
 
-对应 Full-Text 索引，用于 `MATCH ... AGAINST` 全文检索。
+对应 Full-Text 索引，用于 `MATCH ... AGAINST` 全文检索。详见 → [[MySQL-全文索引-FULLTEXT]]
 
 ### 空间索引（SPATIAL）
 

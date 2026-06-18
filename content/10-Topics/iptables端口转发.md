@@ -1,12 +1,11 @@
 ---
 title: iptables端口转发
 date: 2026-06-02
-tags:
-  - topic/计算机网络
-  - topic/Linux
-  - topic/运维
-status: to-review
 updated: 2026-06-02 12:00:00
+tags:
+  - topic/Linux
+  - topic/计算机网络
+status: to-review
 ---
 
 ## 核心概念

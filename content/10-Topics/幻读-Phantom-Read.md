@@ -1,11 +1,6 @@
 ---
 title: 幻读（Phantom Read）
 date: 2026-05-23
-tags:
-  - topic/数据库
-  - topic/数据库事务
-  - topic/并发控制
-status: to-review
 updated: 2026-05-26 15:30:00
 aliases:
   - Phantom Read
@@ -17,6 +12,11 @@ related:
   - "[[隔离级别]]"
   - "[[事务ACID]]"
   - "[[MVCC-多版本并发控制]]"
+tags:
+  - language/sql
+  - topic/MySQL
+  - topic/数据库/事务
+status: to-review
 ---
 
 # 幻读（Phantom Read）

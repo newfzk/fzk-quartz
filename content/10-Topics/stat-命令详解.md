@@ -1,14 +1,14 @@
 ---
 title: stat 命令详解
 date: 2026-06-01
-tags:
-  - topic/Linux
-  - topic/命令
-  - topic/文件系统
-status: evergreen
 aliases:
   - stat
   - stat 命令
+tags:
+  - topic/Linux
+  - topic/Linux/命令
+  - topic/Linux/文件系统
+status: to-review
 ---
 
 # stat 命令详解

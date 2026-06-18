@@ -1,10 +1,6 @@
 ---
 title: Runtime.getRuntime().availableProcessors()
 date: 2026-06-01
-tags:
-  - topic/JVM
-  - topic/并发控制
-  - language/java
 aliases:
   - availableProcessors
   - Runtime.availableProcessors
@@ -14,6 +10,11 @@ related:
   - "[[Java线程池创建方式]]"
   - "[[ThreadPoolExecutor核心参数]]"
   - "[[JVM内存溢出预防]]"
+tags:
+  - language/java
+  - topic/JVM
+  - topic/java/并发
+status: to-review
 ---
 
 # `Runtime.getRuntime().availableProcessors()`

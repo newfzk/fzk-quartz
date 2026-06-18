@@ -2,7 +2,10 @@
 title: Java Map.computeIfAbsent
 type: basic-note
 date: 2026-06-03
-tags: java, map, computeIfAbsent, 集合
+tags:
+  - language/java
+  - topic/java/集合
+status: to-review
 ---
 
 # Java Map.computeIfAbsent

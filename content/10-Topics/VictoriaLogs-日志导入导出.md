@@ -2,7 +2,9 @@
 title: 日志导入导出-VictoriaLogs
 type: basic-note
 date: 2025-05-29
-tags: victorialogs, import, export
+tags:
+  - topic/VictoriaLogs
+status: to-review
 ---
 
 # 日志导入导出-VictoriaLogs

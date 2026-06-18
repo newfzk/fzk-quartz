@@ -1,15 +1,14 @@
 ---
 title: 案例：df 与 du 磁盘空间显示不一致排查
 date: 2026-06-01
-tags:
-  - topic/Linux
-  - topic/故障排查
-  - topic/磁盘文件管理
-  - topic/案例
-status: evergreen
 aliases:
   - df和du显示不一致排查案例
   - 达梦数据库审计文件磁盘空间排查
+tags:
+  - topic/Linux
+  - topic/故障排查
+  - topic/Linux/文件系统
+status: to-review
 ---
 
 # 案例：df 与 du 磁盘空间显示不一致排查

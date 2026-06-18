@@ -2,7 +2,10 @@
 title: log_format nginx日志格式定义
 type: basic-note
 date: 2025-06-25
-tags: nginx, log, conf
+tags:
+  - topic/Nginx
+  - topic/计算机网络
+status: to-review
 ---
 
 # log_format nginx日志格式定义

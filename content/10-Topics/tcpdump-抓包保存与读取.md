@@ -1,16 +1,16 @@
 ---
 title: tcpdump 抓包保存与读取
 date: 2026-06-03
-tags:
-  - topic/tcpdump
-  - topic/网络排查
-  - topic/pcap
-status: to-review
 aliases:
   - pcap 文件
   - tcpdump 保存
   - tcpdump -w
   - tcpdump -r
+tags:
+  - topic/Linux
+  - topic/Linux/命令
+  - topic/计算机网络
+status: to-review
 ---
 
 # tcpdump 抓包保存与读取

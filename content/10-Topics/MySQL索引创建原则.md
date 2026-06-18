@@ -1,13 +1,15 @@
 ---
 title: MySQL索引创建原则
-tags:
-  - topic/数据库
-  - topic/性能优化
-  - language/sql
 aliases:
   - 索引创建注意事项
   - 索引最佳实践
   - Index Best Practices
+tags:
+  - language/sql
+  - topic/MySQL
+  - topic/数据库/索引
+  - topic/数据库/性能
+status: to-review
 ---
 
 # MySQL索引创建原则
@@ -232,3 +234,5 @@ CREATE INDEX idx_a_b ON t(a, b);
 - [[MySQL联合索引]] — 最左前缀原则与列顺序
 - [[主键索引与唯一索引的区别]]
 - [[接口性能排查指南]] — EXPLAIN 分析、慢 SQL 实战
+- [[MySQL深度分页优化]] — 深度分页问题与优化
+- [[快手电商-一面-19题总结]] — Q9 深度分页优化

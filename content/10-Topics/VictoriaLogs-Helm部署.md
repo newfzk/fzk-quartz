@@ -2,7 +2,11 @@
 title: VictoriaLogs Helm方式部署
 type: basic-note
 date: 2025-05-21
-tags: victorialogs, helm, k8s
+tags:
+  - topic/VictoriaLogs
+  - topic/Kubernetes
+  - topic/Helm
+status: to-review
 ---
 
 # VictoriaLogs Helm方式部署

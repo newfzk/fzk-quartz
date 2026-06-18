@@ -2,7 +2,10 @@
 title: Git 忽略已追踪文件
 type: basic-note
 date: 2025-05-07
-tags: git, gitignore
+tags:
+  - topic/git
+  - topic/工具
+status: to-review
 ---
 
 # Git 忽略已追踪文件

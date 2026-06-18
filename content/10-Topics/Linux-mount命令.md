@@ -2,7 +2,10 @@
 title: Linux mount 挂载命令
 type: basic-note
 date: 2025-06-09
-tags: linux, mount, 命令
+tags:
+  - topic/Linux
+  - topic/Linux/命令
+status: to-review
 ---
 
 # Linux mount 挂载命令

@@ -2,7 +2,10 @@
 title: Shell 脚本备忘
 type: basic-note
 date: 2026-06-03
-tags: shell, bash, 脚本
+tags:
+  - language/shell
+  - topic/Linux/命令
+status: to-review
 ---
 
 # Shell 脚本备忘

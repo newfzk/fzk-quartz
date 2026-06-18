@@ -1,11 +1,6 @@
 ---
 title: Java 虚拟线程（Virtual Threads）
 date: 2026-06-01
-tags:
-  - topic/并发控制
-  - topic/并发编程基础
-  - language/java
-  - topic/线程池
 aliases:
   - 虚拟线程
   - Virtual Threads
@@ -16,6 +11,10 @@ related:
   - "[[进程线程协程]]"
   - "[[ThreadPoolExecutor核心参数]]"
   - "[[Java线程池创建方式]]"
+tags:
+  - language/java
+  - topic/java/并发
+status: to-review
 ---
 
 # Java 虚拟线程（Virtual Threads）

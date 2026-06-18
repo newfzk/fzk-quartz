@@ -2,7 +2,9 @@
 title: VictoriaLogs 工作负载资源估算
 type: basic-note
 date: 2025-05-30
-tags: victorialogs, resources, estimate
+tags:
+  - topic/VictoriaLogs
+status: to-review
 ---
 
 # VictoriaLogs 工作负载资源估算

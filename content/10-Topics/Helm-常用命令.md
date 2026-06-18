@@ -2,7 +2,11 @@
 title: helm常用命令
 type: basic-note
 date: 2025-06-14
-tags: helm, command
+tags:
+  - topic/Helm
+  - topic/Kubernetes
+  - topic/Linux/命令
+status: to-review
 ---
 
 # helm常用命令

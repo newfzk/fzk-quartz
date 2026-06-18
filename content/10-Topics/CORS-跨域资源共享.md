@@ -2,7 +2,10 @@
 title: CORS 跨域资源共享
 type: basic-note
 date: 2025-05-28
-tags: cors, HTTP, 浏览器, 跨域
+tags:
+  - topic/计算机网络
+  - topic/安全
+status: to-review
 ---
 
 # CORS 跨域资源共享

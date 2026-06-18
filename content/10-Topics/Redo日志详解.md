@@ -1,11 +1,6 @@
 ---
 title: Redo 日志详解
 date: 2026-05-23
-tags:
-  - topic/数据库事务
-  - topic/并发控制
-  - language/sql
-status: to-review
 updated: 2026-06-04
 aliases:
   - Redo日志
@@ -17,6 +12,12 @@ related:
   - "[[Undo-Redo日志]]"
   - "[[事务ACID]]"
   - "[[Mysql常用配置]]"
+tags:
+  - language/sql
+  - topic/MySQL
+  - topic/数据库/日志
+  - topic/数据库/事务
+status: to-review
 ---
 
 # Redo 日志详解
@@ -169,3 +170,5 @@ A：为了控制文件大小，采用循环写入策略。新数据覆盖旧数�
 - [[Undo-Redo日志]] — Undo/Redo 对比与组合知识地图（MOC）
 - [[事务ACID]] — 事务的持久性由 Redo 日志保证
 - [[Mysql常用配置]] — MySQL 8 Redo 日志配置
+- [[MySQL Binlog 日志配置]] — Binlog 与两阶段提交
+- [[快手电商-一面-19题总结]] — Q8 MySQL 两阶段提交

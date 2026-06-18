@@ -1,18 +1,17 @@
 ---
 title: MySQL GRANT 授权语句
 date: 2026-06-03
-tags:
-  - mysql
-  - database
-  - topic/数据库权限
-  - language/sql
-status: to-review
 aliases:
   - MySQL 授权
   - GRANT 命令
   - MySQL 权限管理
 related:
   - "[[Mysql常用配置]]"
+tags:
+  - language/sql
+  - topic/MySQL
+  - topic/安全
+status: to-review
 ---
 
 # MySQL GRANT 授权语句

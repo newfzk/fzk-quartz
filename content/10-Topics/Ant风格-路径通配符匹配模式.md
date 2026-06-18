@@ -1,18 +1,17 @@
 ---
 title: Ant 风格 — 路径通配符匹配模式
 date: 2026-06-08
-tags:
-  - topic/Spring
-  - topic/Java基础
-  - topic/文件路径
-  - language/java
-status: reviewed
 aliases:
   - Ant风格
   - Ant path pattern
   - 路径通配符
 related:
   - "[[Spring-Resource资源抽象]]"
+tags:
+  - language/java
+  - topic/java/基础
+  - topic/spring
+status: to-review
 ---
 
 # Ant 风格路径匹配

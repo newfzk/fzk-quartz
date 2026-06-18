@@ -1,11 +1,6 @@
 ---
 title: CopyOnWriteArrayList 原理与实现
 date: 2026-05-26
-tags:
-  - topic/并发控制
-  - topic/Java集合
-  - language/java
-status: to-review
 updated: 2026-05-26 15:30:00
 aliases:
   - CopyOnWriteArrayList
@@ -15,6 +10,11 @@ related:
   - "[[Java并发集合-ConcurrentHashMap]]"
   - "[[锁机制实现详解]]"
   - "[[synchronized机制详解]]"
+tags:
+  - language/java
+  - topic/java/集合
+  - topic/java/并发
+status: to-review
 ---
 
 # CopyOnWriteArrayList 原理与实现

@@ -2,7 +2,10 @@
 title: helm-chart内置对象
 type: basic-note
 date: 2026-01-15
-tags: helm, chart, templates
+tags:
+  - topic/Helm
+  - topic/Kubernetes
+status: to-review
 ---
 
 # helm-chart内置对象

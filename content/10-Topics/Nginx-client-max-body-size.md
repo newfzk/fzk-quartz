@@ -2,7 +2,10 @@
 title: Nginx约束客户端请求体最大体积
 type: basic-note
 date: 2025-08-26
-tags: conf, nginx, request, client_max_body_size
+tags:
+  - topic/Nginx
+  - topic/计算机网络
+status: to-review
 ---
 
 # Nginx约束客户端请求体最大体积

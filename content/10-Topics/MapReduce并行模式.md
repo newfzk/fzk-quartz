@@ -1,11 +1,6 @@
 ---
 title: MapReduce 并行模式
 date: 2026-06-01
-tags:
-  - topic/并发控制
-  - topic/设计模式
-  - topic/线程池
-  - language/java
 aliases:
   - MapReduce
   - 分治法
@@ -15,6 +10,11 @@ related:
   - "[[ThreadPoolExecutor核心参数]]"
   - "[[Java线程池创建方式]]"
   - "[[JVM内存溢出预防]]"
+tags:
+  - language/java
+  - topic/java/并发
+  - topic/设计模式
+status: to-review
 ---
 
 # MapReduce 并行模式

@@ -1,13 +1,15 @@
 ---
 title: MySQL联合索引
-tags:
-  - topic/数据库
-  - topic/性能优化
-  - language/sql
 aliases:
   - 复合索引
   - Composite Index
   - Compound Index
+tags:
+  - language/sql
+  - topic/MySQL
+  - topic/数据库/索引
+  - topic/数据库/性能
+status: to-review
 ---
 
 # MySQL联合索引
@@ -236,3 +238,5 @@ SELECT * FROM t WHERE a = 1 AND b = 5 FOR UPDATE;
 - [[主键索引与唯一索引的区别]]
 - [[接口性能排查指南]] — EXPLAIN 分析、慢 SQL 优化实战
 - [[锁机制实现详解]] — Next-Key Lock 与索引的依赖关系
+- [[MySQL深度分页优化]] — 深度分页与索引应用
+- [[快手电商-一面-19题总结]] — Q9 深度分页优化

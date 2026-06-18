@@ -1,14 +1,14 @@
 ---
 title: lsof 文件诊断工具
 date: 2026-05-29
-tags:
-  - topic/Linux
-  - topic/故障排查
-  - topic/磁盘文件管理
-status: to-review
 aliases:
   - lsof
   - List Open Files
+tags:
+  - topic/Linux
+  - topic/Linux/命令
+  - topic/故障排查
+status: to-review
 ---
 
 # lsof 文件诊断工具

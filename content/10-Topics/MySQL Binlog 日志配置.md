@@ -1,15 +1,16 @@
 ---
 title: MySQL Binlog 日志配置
 date: 2026-05-26
-tags:
-  - topic/数据库事务
-  - topic/数据库配置
-  - language/sql
 aliases:
   - Binlog配置
   - 二进制日志
-status: to-review
 updated: 2026-05-26 15:30:00
+tags:
+  - language/sql
+  - topic/MySQL
+  - topic/数据库/日志
+  - topic/数据库/配置
+status: to-review
 ---
 
 # MySQL Binlog 日志配置
@@ -117,6 +118,14 @@ relay_log = /var/log/mysql/relay-bin
 gtid_mode = ON
 enforce_gtid_consistency = ON
 ```
+
+---
+
+## 参考链接
+
+- [[Redo日志详解]] — Redo 日志与两阶段提交
+- [[事务ACID]] — 事务的持久性与一致性
+- [[快手电商-一面-19题总结]] — Q8 MySQL 两阶段提交
 
 ---
 

@@ -2,7 +2,9 @@
 title: VictoriaLogs 配置优化
 type: basic-note
 date: 2025-06-10
-tags: victorialogs, config, work
+tags:
+  - topic/VictoriaLogs
+status: to-review
 ---
 
 # VictoriaLogs 配置优化

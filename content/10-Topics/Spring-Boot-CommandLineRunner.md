@@ -1,15 +1,14 @@
 ---
 title: Spring Boot — CommandLineRunner 启动后执行
 date: 2026-06-08
-tags:
-  - topic/Spring-Boot
-  - topic/Spring
-  - language/java
-status: reviewed
 aliases:
   - CommandLineRunner
   - ApplicationRunner
   - 启动后执行
+tags:
+  - language/java
+  - topic/spring-boot
+status: to-review
 ---
 
 # Spring Boot — CommandLineRunner 启动后执行

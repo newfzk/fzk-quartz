@@ -2,7 +2,10 @@
 title: helm-chart-templates
 type: basic-note
 date: 2026-01-08
-tags: helm, chart, templates
+tags:
+  - topic/Helm
+  - topic/Kubernetes
+status: to-review
 ---
 
 # helm-chart-templates

@@ -2,7 +2,10 @@
 title: VictoriaLogs概述
 type: basic-note
 date: 2025-05-21
-tags: victorialogs, log, overview
+tags:
+  - topic/VictoriaLogs
+  - topic/日志
+status: to-review
 ---
 
 # VictoriaLogs概述

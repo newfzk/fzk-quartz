@@ -1,11 +1,11 @@
 ---
 title: Java集合框架-HashSet
 date: 2026-06-02
-tags:
-  - "#language/java"
-  - topic/集合
-status: to-review
 updated: 2026-06-02 00:00:00
+tags:
+  - language/java
+  - topic/java/集合
+status: to-review
 ---
 
 ## 核心概念

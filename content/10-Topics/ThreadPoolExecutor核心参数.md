@@ -1,10 +1,6 @@
 ---
 title: ThreadPoolExecutor 核心参数
 date: 2026-06-01
-tags:
-  - topic/并发控制
-  - topic/线程池
-  - language/java
 aliases:
   - ThreadPoolExecutor参数
   - 线程池参数
@@ -16,6 +12,11 @@ related:
   - "[[Java线程池创建方式]]"
   - "[[线程池监控与调优]]"
   - "[[JVM内存溢出预防]]"
+tags:
+  - language/java
+  - topic/java/并发
+  - topic/线程池
+status: to-review
 ---
 
 # ThreadPoolExecutor 核心参数

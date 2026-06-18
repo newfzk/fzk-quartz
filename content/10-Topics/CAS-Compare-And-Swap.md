@@ -1,11 +1,6 @@
 ---
 title: CAS（Compare And Swap）机制
 date: 2026-05-23
-tags:
-  - topic/并发控制
-  - topic/CAS
-  - language/java
-status: to-review
 updated: 2026-05-26 15:30:00
 aliases:
   - Compare-And-Swap
@@ -16,6 +11,10 @@ related:
   - "[[MVCC-多版本并发控制]]"
   - "[[悲观锁]]"
   - "[[锁机制实现详解]]"
+tags:
+  - language/java
+  - topic/java/并发
+status: to-review
 ---
 
 # CAS（Compare And Swap）机制

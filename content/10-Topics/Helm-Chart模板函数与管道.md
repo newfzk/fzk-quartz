@@ -2,7 +2,10 @@
 title: helm-chart模板函数和管道符
 type: basic-note
 date: 2026-01-15
-tags: helm, chart, templates
+tags:
+  - topic/Helm
+  - topic/Kubernetes
+status: to-review
 ---
 
 # helm-chart模板函数和管道符

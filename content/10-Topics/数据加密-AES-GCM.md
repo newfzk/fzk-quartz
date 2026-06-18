@@ -1,10 +1,6 @@
 ---
 title: 数据加密 — AES-GCM 模式
 date: 2026-05-26
-tags:
-  - topic/数据加密
-  - language/java
-status: to-review
 updated: 2026-06-04
 aliases:
   - AES-GCM
@@ -13,6 +9,11 @@ aliases:
 related:
   - "[[密钥管理策略]]"
   - "[[数据加密与密钥管理]]"
+tags:
+  - language/java
+  - topic/系统设计
+  - topic/安全
+status: to-review
 ---
 
 # 数据加密 — AES-GCM 模式

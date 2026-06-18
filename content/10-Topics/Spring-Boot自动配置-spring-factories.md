@@ -1,17 +1,16 @@
 ---
 title: Spring Boot 自动配置 — spring.factories 机制
 date: 2026-06-08
-tags:
-  - topic/Spring-Boot
-  - topic/Spring
-  - language/java
-status: reviewed
 aliases:
   - spring.factories
   - Spring自动配置
   - EnableAutoConfiguration
 related:
   - "[[Spring-Resource资源抽象]]"
+tags:
+  - language/java
+  - topic/spring-boot
+status: to-review
 ---
 
 # Spring Boot 自动配置 — spring.factories 机制

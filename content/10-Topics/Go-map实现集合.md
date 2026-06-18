@@ -1,11 +1,11 @@
 ---
 title: Go-map实现集合
 date: 2026-06-02
-tags:
-  - "#language/go"
-  - topic/集合
-status: to-review
 updated: 2026-06-02 00:00:00
+tags:
+  - language/go
+  - topic/数据结构
+status: to-review
 ---
 
 ## 核心概念

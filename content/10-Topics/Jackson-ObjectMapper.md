@@ -2,7 +2,11 @@
 title: Jackson ObjectMapper
 type: basic-note
 date: 2026-06-03
-tags: java, jackson, json, 序列化
+tags:
+  - language/java
+  - topic/java/基础
+  - topic/序列化
+status: to-review
 ---
 
 # Jackson ObjectMapper

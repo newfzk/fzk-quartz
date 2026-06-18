@@ -2,7 +2,10 @@
 title: helm-chart结构
 type: basic-note
 date: 2026-01-02
-tags: helm, chart
+tags:
+  - topic/Helm
+  - topic/Kubernetes
+status: to-review
 ---
 
 # helm-chart结构

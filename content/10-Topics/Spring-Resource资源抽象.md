@@ -1,17 +1,16 @@
 ---
 title: Spring Resource 资源抽象
 date: 2026-06-08
-tags:
-  - topic/Spring
-  - topic/Spring-Boot
-  - language/java
-status: reviewed
 aliases:
   - ResourceLoader
   - ResourcePatternResolver
   - Spring资源加载
 related:
   - "[[Ant风格-路径通配符匹配模式]]"
+tags:
+  - language/java
+  - topic/spring
+status: to-review
 ---
 
 # Spring Resource 资源抽象

@@ -3,6 +3,10 @@ title: helmChart开发
 type: basic-note
 date: 2026-01-02
 tags:
+  - topic/Helm
+  - topic/Kubernetes
+  - topic/Linux/命令
+status: to-review
 ---
 
 # helmChart开发

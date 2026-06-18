@@ -1,10 +1,6 @@
 ---
 title: Java 读写锁（ReadWriteLock）
 date: 2026-05-23
-tags:
-  - topic/并发控制
-  - language/java
-status: to-review
 aliases:
   - ReadWriteLock
   - 读写锁
@@ -15,6 +11,10 @@ related:
   - "[[锁机制实现详解]]"
   - "[[synchronized机制详解]]"
   - "[[悲观锁]]"
+tags:
+  - language/java
+  - topic/java/并发
+status: to-review
 ---
 
 # Java 读写锁（ReadWriteLock）
@@ -85,3 +85,4 @@ public class Cache {
 - [[synchronized机制详解]] — Java 内置锁机制
 - [[悲观锁]] — 数据库悲观锁
 - [[分布式锁实现]] — Redis/ZK 分布式锁
+- [[快手电商-一面-19题总结]] — Q4 ReadWriteLock 使用场景

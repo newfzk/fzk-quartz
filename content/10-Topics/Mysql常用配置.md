@@ -1,15 +1,14 @@
 ---
 title: MySQL 常用配置
 date: 2026-05-25
-tags:
-  - topic/数据库事务
-  - topic/并发控制
-  - topic/数据库配置
-  - language/sql
-  - status/reviewed
 aliases:
   - MySQL配置
   - MySQL常用参数
+tags:
+  - language/sql
+  - topic/MySQL
+  - topic/数据库/配置
+status: to-review
 ---
 
 # MySQL 常用配置

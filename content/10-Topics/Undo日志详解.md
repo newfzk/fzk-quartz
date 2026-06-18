@@ -1,11 +1,6 @@
 ---
 title: Undo 日志详解
 date: 2026-05-23
-tags:
-  - topic/数据库事务
-  - topic/并发控制
-  - language/sql
-status: to-review
 updated: 2026-06-04
 aliases:
   - Undo日志
@@ -17,6 +12,12 @@ related:
   - "[[事务ACID]]"
   - "[[MVCC-多版本并发控制]]"
   - "[[隔离级别]]"
+tags:
+  - language/sql
+  - topic/MySQL
+  - topic/数据库/日志
+  - topic/数据库/事务
+status: to-review
 ---
 
 # Undo 日志详解

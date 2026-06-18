@@ -1,17 +1,16 @@
 ---
 title: tcpdump 抓包命令详解
 date: 2026-06-03
-tags:
-  - topic/tcpdump
-  - topic/网络排查
-  - topic/命令
-  - topic/Linux
-status: evergreen
 aliases:
   - tcpdump
   - tcpdump 命令
   - 抓包命令
   - packet capture
+tags:
+  - topic/Linux
+  - topic/Linux/命令
+  - topic/计算机网络
+status: to-review
 ---
 
 # tcpdump 抓包命令详解

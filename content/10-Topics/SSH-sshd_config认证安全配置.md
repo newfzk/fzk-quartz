@@ -1,11 +1,6 @@
 ---
 title: SSH — sshd_config 认证安全配置
 date: 2026-06-09
-tags:
-  - topic/Linux
-  - topic/网络安全
-  - topic/SSH
-status: to-review
 aliases:
   - sshd_config
   - LoginGraceTime
@@ -13,6 +8,11 @@ aliases:
   - StrictModes
   - SSH 安全配置
   - SSH 服务器配置
+tags:
+  - topic/Linux
+  - topic/安全
+  - topic/计算机网络
+status: to-review
 ---
 
 # SSH — sshd_config 认证安全配置

@@ -2,7 +2,9 @@
 title: VictoriaLogs 安装部署
 type: basic-note
 date: 2025-05-21
-tags: victorialogs, install
+tags:
+  - topic/VictoriaLogs
+status: to-review
 ---
 
 # VictoriaLogs 安装部署

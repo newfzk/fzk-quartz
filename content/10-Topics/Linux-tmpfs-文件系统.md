@@ -1,16 +1,15 @@
 ---
 title: Linux tmpfs 文件系统
 date: 2026-06-02
-tags:
-  - topic/Linux
-  - topic/VFS
-  - topic/内存管理
-status: evergreen
 aliases:
   - tmpfs
   - 临时文件系统
   - 内存文件系统
   - 临时文件
+tags:
+  - topic/Linux
+  - topic/Linux/文件系统
+status: to-review
 ---
 
 # Linux tmpfs 文件系统

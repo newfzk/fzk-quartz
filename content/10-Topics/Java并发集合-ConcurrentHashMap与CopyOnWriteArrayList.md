@@ -1,12 +1,6 @@
 ---
 title: 并发容器选型 - ConcurrentHashMap vs CopyOnWriteArrayList
 date: 2026-05-26
-tags:
-  - topic/并发控制
-  - topic/Java集合
-  - topic/选型
-  - language/java
-status: to-review
 updated: 2026-05-26 15:30:00
 aliases:
   - Java并发容器
@@ -17,6 +11,11 @@ related:
   - "[[CAS-Compare-And-Swap]]"
   - "[[synchronized机制详解]]"
   - "[[乐观锁]]"
+tags:
+  - language/java
+  - topic/java/集合
+  - topic/java/并发
+status: to-review
 ---
 
 # 并发容器选型 — ConcurrentHashMap vs CopyOnWriteArrayList

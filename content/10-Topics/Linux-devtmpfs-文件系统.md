@@ -1,16 +1,15 @@
 ---
 title: Linux devtmpfs 文件系统
 date: 2026-06-02
-tags:
-  - topic/Linux
-  - topic/VFS
-  - topic/设备
-status: evergreen
 aliases:
   - devtmpfs
   - /dev
   - 设备文件系统
   - 设备节点管理
+tags:
+  - topic/Linux
+  - topic/Linux/文件系统
+status: to-review
 ---
 
 # Linux devtmpfs 文件系统

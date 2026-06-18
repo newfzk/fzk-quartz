@@ -1,11 +1,11 @@
 ---
 title: Docker网络模式-bridge
 date: 2026-06-02
-tags:
-  - topic/计算机网络
-  - topic/Docker
-status: to-review
 updated: 2026-06-02 12:00:00
+tags:
+  - topic/Docker
+  - topic/计算机网络
+status: to-review
 ---
 
 ## 核心概念

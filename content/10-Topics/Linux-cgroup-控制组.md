@@ -1,18 +1,16 @@
 ---
 title: Linux cgroup 控制组
 date: 2026-06-02
-tags:
-  - topic/Linux
-  - topic/VFS
-  - topic/容器
-  - topic/资源管理
-status: to-review
 aliases:
   - cgroup
   - cgroup2
   - 控制组
   - Control Group
   - 资源隔离
+tags:
+  - topic/Linux
+  - topic/容器
+status: to-review
 ---
 
 # Linux cgroup 控制组

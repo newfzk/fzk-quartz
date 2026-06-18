@@ -3,7 +3,10 @@ title: Harness Engineering 知识沉淀实践
 type: basic-note
 date: 2026-06-03
 source: https://mp.weixin.qq.com/s/Xy8NwrHZRWv301eTZz4Dpw
-tags: AI, Harness, 知识管理, 工程实践
+tags:
+  - topic/知识管理
+  - topic/AI
+status: to-review
 ---
 
 # Harness Engineering 知识沉淀实践

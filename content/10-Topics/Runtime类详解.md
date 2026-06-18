@@ -1,10 +1,6 @@
 ---
 title: Runtime 类详解
 date: 2026-06-04
-tags:
-  - topic/JVM
-  - topic/Java基础
-  - language/java
 aliases:
   - Runtime类
   - java.lang.Runtime
@@ -14,7 +10,13 @@ related:
   - "[[单例模式]]"
   - "[[JVM-堆内存分代模型]]"
   - "[[JVM-OOM排查指南]]"
+tags:
+  - language/java
+  - topic/JVM
+  - topic/java/基础
+status: to-review
 ---
+
 # `java.lang.Runtime` 类详解
 
 > [!info] 一句话

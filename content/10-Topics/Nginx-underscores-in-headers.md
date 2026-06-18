@@ -2,7 +2,10 @@
 title: nginx配置-请求头可带下划线
 type: basic-note
 date: 2025-05-29
-tags: nginx, conf, http, header, underscore, underline
+tags:
+  - topic/Nginx
+  - topic/计算机网络
+status: to-review
 ---
 
 # nginx配置-请求头可带下划线

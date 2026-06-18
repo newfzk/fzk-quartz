@@ -1,11 +1,6 @@
 ---
 title: ConcurrentHashMap 原理与实现
 date: 2026-05-26
-tags:
-  - topic/并发控制
-  - topic/Java集合
-  - language/java
-status: to-review
 updated: 2026-05-26 15:30:00
 aliases:
   - ConcurrentHashMap
@@ -21,6 +16,11 @@ related:
   - "[[Java关键字-transient与volatile]]"
   - "[[红黑树面试常考知识点]]"
   - "[[Java并发集合-CopyOnWriteArrayList]]"
+tags:
+  - language/java
+  - topic/java/集合
+  - topic/java/并发
+status: to-review
 ---
 
 # ConcurrentHashMap 原理与实现

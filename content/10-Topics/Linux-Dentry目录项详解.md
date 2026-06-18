@@ -1,16 +1,16 @@
 ---
 title: Linux Dentry（目录项）详解
 date: 2026-06-01
-tags:
-  - topic/Linux
-  - topic/文件系统
-status: evergreen
 aliases:
   - dentry
   - 目录项
   - directory entry
   - dcache
   - 目录项缓存
+tags:
+  - topic/Linux
+  - topic/Linux/文件系统
+status: to-review
 ---
 
 # Linux Dentry（目录项）详解

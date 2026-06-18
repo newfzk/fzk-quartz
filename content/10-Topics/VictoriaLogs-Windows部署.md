@@ -2,7 +2,10 @@
 title: 基于windows的VictoriaLogs部署
 type: basic-note
 date: 2025-06-30
-tags: windows, victorialogs, deploy
+tags:
+  - topic/VictoriaLogs
+  - topic/Windows
+status: to-review
 ---
 
 # 基于windows的VictoriaLogs部署

@@ -1,11 +1,6 @@
 ---
 title: JVM 内存溢出（OOM）预防策略
 date: 2026-06-01
-tags:
-  - topic/内存管理
-  - topic/并发控制
-  - topic/JVM
-  - language/java
 aliases:
   - OOM预防
   - 内存溢出预防
@@ -16,7 +11,11 @@ related:
   - "[[ThreadPoolExecutor核心参数]]"
   - "[[Java线程池创建方式]]"
   - "[[线程池监控与调优]]"
-status: reviewed
+tags:
+  - language/java
+  - topic/JVM
+  - topic/java/并发
+status: to-review
 ---
 
 # JVM 内存溢出（OOM）预防策略

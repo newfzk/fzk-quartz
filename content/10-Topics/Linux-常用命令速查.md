@@ -3,6 +3,9 @@ title: Linux 常用命令速查
 type: basic-note
 date: 2026-06-03
 tags:
+  - topic/Linux
+  - topic/Linux/命令
+status: to-review
 ---
 
 # Linux 常用命令速查

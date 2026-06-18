@@ -1,9 +1,6 @@
 ---
 title: 事务ACID
 date: 2026-05-22
-tags:
-  - topic/数据库事务
-status: to-review
 updated: 2026-05-26 15:30:00
 aliases:
   - Transaction ACID
@@ -18,6 +15,11 @@ related:
   - "[[锁机制实现详解]]"
   - "[[MVCC-多版本并发控制]]"
   - "[[事务传播行为]]"
+tags:
+  - language/sql
+  - topic/MySQL
+  - topic/数据库/事务
+status: to-review
 ---
 
 事务是数据库管理系统执行过程中的一个逻辑单位，由一个有限的数据库操作序列构成。ACID是事务必须满足的四个特性：

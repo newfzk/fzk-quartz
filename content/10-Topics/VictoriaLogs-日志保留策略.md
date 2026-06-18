@@ -2,7 +2,10 @@
 title: 日志保留策略-VictoriaLogs
 type: basic-note
 date: 2025-05-29
-tags: victorialogs, retention-policy
+tags:
+  - topic/VictoriaLogs
+  - topic/日志
+status: to-review
 ---
 
 # 日志保留策略-VictoriaLogs

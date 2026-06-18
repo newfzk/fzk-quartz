@@ -2,7 +2,10 @@
 title: LogsQL
 type: basic-note
 date: 2025-05-29
-tags: logsql, victorialogs
+tags:
+  - topic/VictoriaLogs
+  - topic/日志
+status: to-review
 ---
 
 # LogsQL
