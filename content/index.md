@@ -13,6 +13,7 @@ tags:
 
 - [[案例-df与du磁盘空间不一致排查|案例：df 与 du 磁盘空间显示不一致排查]]
 - [[案例-Docker-iptables模式切换导致链缺失|案例：Docker iptables 模式切换导致链缺失]]
+- [[案例-K8s容器时区异常-PVC挂载遮蔽usr-share|案例-K8s容器时区异常-PVC挂载遮蔽usr-share]]
 - [[案例-Nginx-proxy_pass-proxy_redirect配置调整|案例：Nginx proxy_pass / proxy_redirect 配置调整]]
 - [[悲观锁|悲观锁]]
 - [[不可重复读-Non-repeatable-Read|不可重复读（Non-repeatable Read）]]
@@ -30,6 +31,7 @@ tags:
 - [[乐观锁|乐观锁]]
 - [[类型兼容性矩阵测试模式|类型兼容性矩阵测试模式（Schema Evolution）]]
 - [[密钥管理策略|密钥管理策略]]
+- [[容器文件消失排查-ENOENT无法区分层级|容器文件消失排查-ENOENT无法区分层级]]
 - [[事务传播行为|事务传播行为]]
 - [[事务ACID|事务 ACID]]
 - [[数据加密-AES-GCM|数据加密 — AES-GCM 模式]]
@@ -40,19 +42,25 @@ tags:
 - [[线程池拒绝策略|线程池拒绝策略]]
 - [[线程死锁定位与避免|线程死锁定位与避免]]
 - [[脏读-Dirty-Read|脏读（Dirty Read）]]
+- [[正则负向前瞻-排除特定路径段|正则负向前瞻-排除特定路径段]]
 - [[直播弹幕审核系统设计|直播弹幕审核系统设计]]
 - [[主键索引与唯一索引的区别|主键索引与唯一索引的区别]]
 - [[状态机模式实现|状态机模式实现]]
 - [[资源估算方法论|资源估算方法论]]
+- [[Alpine镜像不自带tzdata|Alpine镜像不自带tzdata]]
 - [[Ant风格-路径通配符匹配模式|Ant 风格 — 路径通配符匹配模式]]
+- [[apk数据库与文件系统是两套真相|apk数据库与文件系统是两套真相]]
+- [[ARP协议-IP到MAC的解析|ARP协议-IP到MAC的解析]]
 - [[ArrayList—动态数组|ArrayList — 动态数组]]
 - [[CAS-Compare-And-Swap|CAS 比较并交换]]
 - [[cloud-init-虚拟机自动初始化工具|cloud-init — 虚拟机自动初始化工具]]
 - [[Cobra-Go生态企业级CLI框架|Cobra — Go 生态企业级 CLI 框架]]
 - [[CORS-跨域资源共享|CORS 跨域资源共享]]
 - [[curl-命令详解|curl 命令详解]]
+- [[DECIMAL精度的定义与数据库上限|DECIMAL精度的定义与数据库上限]]
 - [[Docker-cgroup-v2-兼容性问题|Docker cgroup v2 兼容性问题]]
 - [[Docker-Exec形式与Shell形式|Docker — Exec 形式与 Shell 形式]]
+- [[docker-history是审计日志不是文件清单|docker-history是审计日志不是文件清单]]
 - [[Docker网络模式-bridge|Docker网络模式-bridge]]
 - [[Dockerfile-安全最佳实践|Dockerfile — 安全最佳实践]]
 - [[Dockerfile-多阶段构建|Dockerfile — 多阶段构建]]
@@ -60,6 +68,7 @@ tags:
 - [[Dockerfile-基础镜像选型|Dockerfile — 基础镜像选型]]
 - [[Dockerfile-CMD指令|Dockerfile — CMD 指令]]
 - [[Dockerfile-ENTRYPOINT指令|Dockerfile — ENTRYPOINT 指令]]
+- [[FluentBit背压导致mem-buf-overlimit|FluentBit背压导致mem-buf-overlimit]]
 - [[GC-Roots详解|GC Roots 详解]]
 - [[Git-忽略已追踪文件|Git 忽略已追踪文件]]
 - [[gitattributes|Git .gitattributes 文件详解]]
@@ -78,9 +87,11 @@ tags:
 - [[Helm-upgrade命令|helm upgrade]]
 - [[HotSpot-Java虚拟机实现|HotSpot — Java 虚拟机实现]]
 - [[IDEA-Maven多模块依赖识别排查|IDEA-Maven多模块依赖识别排查]]
+- [[IP包接力与路由表|IP包接力与路由表]]
 - [[iptables-扩展匹配模块|iptables 扩展匹配模块 — ADDRTYPE 与 ipset]]
 - [[iptables端口转发|iptables端口转发]]
 - [[iptables详解|iptables详解（四表五链、包流转、场景示例）]]
+- [[IPv4地址分类与子网掩码|IPv4地址分类与子网掩码]]
 - [[IPVS-Director与Real-Server|IPVS — Director 与 Real Server 概念详解]]
 - [[IPVS-IP虚拟服务器详解|IPVS — IP Virtual Server 详解]]
 - [[ipvsadm命令详解|ipvsadm 命令详解]]
@@ -102,6 +113,7 @@ tags:
 - [[Java线程池创建方式|Java 线程池创建方式]]
 - [[Java虚拟线程|Java 虚拟线程（Virtual Threads）]]
 - [[JDBC-catalog-schema跨库污染排查|JDBC-catalog-schema跨库污染排查]]
+- [[JGit内置JSch不支持OpenSSH新格式私钥|JGit内置JSch不支持OpenSSH新格式私钥]]
 - [[JNA详解|JNA 详解]]
 - [[JNI详解|JNI 详解]]
 - [[jstat-命令详解|jstat 命令详解]]
@@ -115,6 +127,7 @@ tags:
 - [[K8s-DNS-故障排查方法论|K8s DNS 故障排查方法论]]
 - [[K8s-NodePort流量流转|K8s NodePort 流量流转（IPVS 模式）]]
 - [[K8s-Service-DNS域名解析规则|K8s Service DNS 域名解析规则]]
+- [[K8s卷挂载是覆盖而非合并|K8s卷挂载是覆盖而非合并]]
 - [[kubectl-合并kubeconfig|kubectl 合并 kubeconfig]]
 - [[LinkedList—双向链表|LinkedList—双向链表]]
 - [[Linux-常用命令速查|Linux 常用命令速查]]
@@ -146,9 +159,13 @@ tags:
 - [[MetalLB-L2模式-VIP-自身不支持跨网段访问|MetalLB L2 模式 — VIP 自身不支持跨网段访问]]
 - [[MITM-中间人攻击|MITM — 中间人攻击（Man-in-the-Middle）]]
 - [[MVCC-多版本并发控制|MVCC 多版本并发控制]]
+- [[MyBatis-jdbcTypeForNull配置详解|MyBatis-jdbcTypeForNull配置详解]]
 - [[MyBatis-Plus-@TableField排除策略|MyBatis-Plus-@TableField排除策略]]
+- [[MyBatis-Plus-MPJLambdaWrapper多表关联查询|MyBatis-Plus-MPJLambdaWrapper多表关联查询]]
+- [[MyBatis-Plus-Page分页对象详解|MyBatis-Plus-Page分页对象详解]]
 - [[MySQL 通用查询日志配置|MySQL 通用查询日志配置]]
 - [[MySQL Binlog 日志配置|MySQL Binlog 日志配置]]
+- [[MySQL SELECT FOR UPDATE 锁粒度分析|MySQL SELECT FOR UPDATE 锁粒度分析]]
 - [[MySQL-8-allowPublicKeyRetrieval|MySQL 8 — allowPublicKeyRetrieval]]
 - [[MySQL-查询用户信息-mysql.user表|MySQL 查询用户信息（mysql.user 表）]]
 - [[MySQL-配置文件体系|MySQL 配置文件体系]]
@@ -181,9 +198,13 @@ tags:
 - [[Nginx-try-files|nginx请求尝试配置]]
 - [[Nginx-underscores-in-headers|nginx配置-请求头可带下划线]]
 - [[OCI-协议规范|OCI 协议规范 — 开放容器标准]]
+- [[OpenSSH私钥格式-PEM与openssh-key-v1|OpenSSH私钥格式-PEM与openssh-key-v1]]
+- [[Oracle-SEQUENCE-序列对象详解|Oracle SEQUENCE 序列对象详解]]
+- [[Oracle列类型无效1111-jdbcTypeForNull|Oracle列类型无效1111-jdbcTypeForNull]]
 - [[Python集合类型|Python集合类型]]
 - [[Redis-BigKey解析|Redis BigKey 解析]]
 - [[Redo日志详解|Redo 日志详解]]
+- [[RIP与BGP-路由表的自动生成|RIP与BGP-路由表的自动生成]]
 - [[Runtime.availableProcessors|Runtime.getRuntime().availableProcessors()]]
 - [[Runtime类详解|Runtime 类详解]]
 - [[Shell-变量声明与作用域|Shell 变量声明与作用域]]
@@ -197,6 +218,8 @@ tags:
 - [[spring-RequiredArgsConstructor注解解释|Lombok @RequiredArgsConstructor 注解]]
 - [[Spring-Resource资源抽象|Spring Resource 资源抽象]]
 - [[Spring-Transactional失效场景|Spring @Transactional 失效场景]]
+- [[SQL-in和not-in的NULL陷阱|SQL-in和not-in的NULL陷阱]]
+- [[SQL-NULL值排序规则-数据库对比|SQL NULL 值排序规则 — MySQL vs Oracle vs 达梦]]
 - [[SSH-会话保活或超时断连|SSH 会话保活与超时断连排查]]
 - [[SSH-sshd_config认证安全配置|SSH — sshd_config 认证安全配置]]
 - [[stat-命令详解|stat 命令详解]]
@@ -211,6 +234,7 @@ tags:
 - [[TLB转换检测缓冲区|TLB 转换检测缓冲区（快表）]]
 - [[TLS-传输层安全协议|TLS — 传输层安全协议]]
 - [[transient关键字详解|transient 关键字详解]]
+- [[TZ环境变量只是指针-时区数据才是本体|TZ环境变量只是指针-时区数据才是本体]]
 - [[Ubuntu-查看系统版本号|Ubuntu 查看系统版本号]]
 - [[Ubuntu-systemd-resolved-机制|Ubuntu systemd-resolved 机制]]
 - [[Undo日志详解|Undo 日志详解]]
@@ -237,15 +261,18 @@ tags:
 |---------|---------|:--------:|
 | [[进程线程协程]] | 进程、线程、协程的概念与对比 | ≈ 8 |
 | [[数据加密与密钥管理]] | AES-GCM、密钥分层架构 | 2 |
-| [[Docker容器技术]] | Dockerfile 指令、网络、运行时兼容性 | 6 |
+| [[Docker容器技术]] | Dockerfile 指令、网络、运行时兼容性、镜像诊断 | 12 |
+| [[K8s容器运维]] | 卷挂载语义、时区与运行时环境、镜像诊断、网络与服务、日志采集 | ≈ 13 |
 | [[锁机制实现详解]] | 悲观锁、乐观锁、分布式锁、读写锁、公平锁等 | ≈ 11 |
 | [[Java线程池与内存管理]] | 线程池参数、JVM 内存模型、OOM 排查 | ≈ 5 |
 | [[Java关键字-transient与volatile]] | transient、volatile 关键字 | 2 |
 | [[Java集合框架]] | ArrayList、LinkedList、HashSet、ConcurrentHashMap、CopyOnWriteArrayList 等核心集合实现 | ≈ 7 |
 | [[Linux文本处理三剑客]] | grep、sed、awk 命令对比 | ≈ 3 |
 | [[Linux-虚拟文件系统VFS]] | VFS 抽象层及各具体文件系统 | ≈ 8 |
-| [[Linux网络数据包处理]] | Netfilter、iptables、IPVS 等内核包处理组件，四层与七层负载均衡 | 9 |
-| [[MySQL知识点汇总]] | MySQL 索引、配置、权限、日志、数据类型 | ≈ 15 |
+| [[Linux网络数据包处理]] | Netfilter、iptables、IPVS 等内核包处理组件，四层与七层负载均衡 | 13 |
+| [[MySQL知识点汇总]] | MySQL 索引、配置、权限、日志、数据类型、锁机制 | ≈ 16 |
+| [[SQL查询与优化]] | NULL 语义陷阱、索引与执行计划、数据类型、MyBatis 持久层 | ≈ 12 |
+| [[网络协议基础]] | IPv4 地址结构、IP 包接力与路由表、ARP、RIP/BGP、Linux 网络实践 | ≈ 10 |
 | [[Undo-Redo日志详解]] | Undo/Redo 日志原理与 MVCC 关联 | ≈ 3 |
 | [[Nginx知识点汇总]] | Nginx location 匹配、反向代理、正则、请求限制、日志配置、重定向控制等 | ≈ 16 |
 

@@ -24,11 +24,12 @@ java [params] -jar <jar文件路径>
 
 ### 堆内存参数
 
-| 参数 | 含义 |
-|------|------|
-| `-XX:MaxRAMPercentage=75.0` | 最大堆内存占容器总内存的 75% |
-| `-XX:InitialRAMPercentage=50.0` | 初始堆内存占比 |
-| `-XX:MinRAMPercentage=25.0` | 最小堆内存占比 |
+| 参数                              | 含义                       |
+| ------------------------------- | ------------------------ |
+| `-XX:MaxRAMPercentage=75.0`     | 最大堆内存占容器总内存的 75%         |
+| `-XX:InitialRAMPercentage=50.0` | 初始堆内存占比                  |
+| `-XX:MinRAMPercentage=25.0`     | 最小堆内存占比                  |
+| `-Xms` / `-Xmx`                 | 堆初始/最大大小（建议设为相同值，避免动态调整） |
 
 > 使用 `RAMPercentage` 系列参数比 `-Xmx` / `-Xms` 更适合容器化部署，能根据容器内存动态调整。
 
