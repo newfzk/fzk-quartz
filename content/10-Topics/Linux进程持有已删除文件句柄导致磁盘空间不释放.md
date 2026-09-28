@@ -99,4 +99,5 @@ truncate -s 0 /path/to/file.log
 - [[Linux-Dentry目录项详解|Dentry 目录项详解]] — dentry 是文件名到 inode 的映射
 - [[Linux-文件描述符fd详解|文件描述符（fd）详解]] — 进程持有文件句柄的本质
 - [[案例-df与du磁盘空间不一致排查|案例：df与du磁盘空间不一致排查]] — 达梦数据库审计文件实战排查记录
-- 待补充：logrotate 日志轮转配置
+- [[Linux-logrotate-配置与rotate语义|logrotate 日志轮转配置]] — 避免单个日志文件无限增长的标准方案
+- [[Linux定时任务与日志轮转|Linux 定时任务与日志轮转（MOC）]] — cron 与日志轮转的完整知识地图

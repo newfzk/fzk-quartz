@@ -60,6 +60,17 @@ aliases:
 > [!tip] 排查「镜像里到底有没有某文件」的手段可信度
 > 容器内 `ls`/`mount` ≈ `docker export` + `tar -t` **>** `.RootFS.Layers` diff_id 比对 **>** 包数据库 **>** `apk audit` **>** **`docker history`（最易误导）**
 
+## 镜像清理与维护
+
+| 主题 | 核心笔记 |
+|:-----|:---------|
+| **prune 的删除范围（`-f` vs `-af`）** | [[Docker-image-prune镜像清理]] |
+| **定时清理与日志保留落地** | [[保留最新N个日志文件的方案对比]] · [[Linux定时任务与日志轮转]] |
+
+> [!warning] `<none>` 镜像越积越多是 CI Runner 的典型症状
+> 每次构建生成的层在 tag 被覆盖后失去引用，形成 dangling 镜像。
+> 清理时优先用 `docker image prune -f`（只删 `<none>`）；`-af` 会连带删除准备复用的基础镜像。
+
 ## 相关原子笔记
 
 ```dataview

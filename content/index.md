@@ -15,6 +15,7 @@ tags:
 - [[案例-Docker-iptables模式切换导致链缺失|案例：Docker iptables 模式切换导致链缺失]]
 - [[案例-K8s容器时区异常-PVC挂载遮蔽usr-share|案例-K8s容器时区异常-PVC挂载遮蔽usr-share]]
 - [[案例-Nginx-proxy_pass-proxy_redirect配置调整|案例：Nginx proxy_pass / proxy_redirect 配置调整]]
+- [[保留最新N个日志文件的方案对比|保留最新 N 个日志文件的三种方案对比]]
 - [[悲观锁|悲观锁]]
 - [[不可重复读-Non-repeatable-Read|不可重复读（Non-repeatable Read）]]
 - [[大数据量异步导出方案|大数据量异步导出方案]]
@@ -61,6 +62,7 @@ tags:
 - [[Docker-cgroup-v2-兼容性问题|Docker cgroup v2 兼容性问题]]
 - [[Docker-Exec形式与Shell形式|Docker — Exec 形式与 Shell 形式]]
 - [[docker-history是审计日志不是文件清单|docker-history是审计日志不是文件清单]]
+- [[Docker-image-prune镜像清理|docker image prune — 镜像清理范围与过滤条件]]
 - [[Docker网络模式-bridge|Docker网络模式-bridge]]
 - [[Dockerfile-安全最佳实践|Dockerfile — 安全最佳实践]]
 - [[Dockerfile-多阶段构建|Dockerfile — 多阶段构建]]
@@ -138,11 +140,15 @@ tags:
 - [[Linux-文件描述符fd详解|Linux 文件描述符（fd）详解]]
 - [[Linux-cgroup-控制组|Linux cgroup 控制组]]
 - [[Linux-comm命令详解|Linux-comm命令详解]]
+- [[Linux-cron定时任务常见陷阱|cron 定时任务常见陷阱]]
 - [[Linux-Dentry目录项详解|Linux Dentry（目录项）详解]]
 - [[Linux-devtmpfs-文件系统|Linux devtmpfs 文件系统]]
 - [[Linux-ext4文件系统|Linux-ext4文件系统]]
 - [[Linux-Inode详解|Linux Inode 详解]]
 - [[Linux-IP转发与路由|Linux-IP转发与路由]]
+- [[Linux-logrotate-调试与归档查看|logrotate — 调试输出与归档查看]]
+- [[Linux-logrotate-可用性与自动执行检查|logrotate — 可用性与自动执行检查]]
+- [[Linux-logrotate-配置与rotate语义|logrotate — 配置结构与 rotate 语义]]
 - [[Linux-mount挂载机制|Linux-mount挂载机制]]
 - [[Linux-mount命令|Linux mount 挂载命令]]
 - [[Linux-proc-文件系统|Linux proc 文件系统]]
@@ -270,6 +276,7 @@ tags:
 | [[Linux文本处理三剑客]] | grep、sed、awk 命令对比 | ≈ 3 |
 | [[Linux-虚拟文件系统VFS]] | VFS 抽象层及各具体文件系统 | ≈ 8 |
 | [[Linux网络数据包处理]] | Netfilter、iptables、IPVS 等内核包处理组件，四层与七层负载均衡 | 13 |
+| [[Linux定时任务与日志轮转]] | cron 定时任务陷阱、logrotate 配置与调试、日志保留方案选型、镜像清理 | 6 |
 | [[MySQL知识点汇总]] | MySQL 索引、配置、权限、日志、数据类型、锁机制 | ≈ 16 |
 | [[SQL查询与优化]] | NULL 语义陷阱、索引与执行计划、数据类型、MyBatis 持久层 | ≈ 12 |
 | [[网络协议基础]] | IPv4 地址结构、IP 包接力与路由表、ARP、RIP/BGP、Linux 网络实践 | ≈ 10 |
